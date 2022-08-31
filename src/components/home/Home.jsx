@@ -1,5 +1,5 @@
 import '../../style/home/home.scss'
-import logo from '../../assets/img/logos/isologo.png';
+import logo from '../../assets/logos/isologo.png';
 
 function Home(){
     return (

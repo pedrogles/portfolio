@@ -1,5 +1,5 @@
 import '../../style/contact/contact.scss';
-import logo from '../../assets/img/logos/Logo-Pedro-Gabriel-2.png';
+import logo from '../../assets/logos/Logo-Pedro-Gabriel-2.png';
 import { AiOutlineMail, AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
 
 function Contact(){

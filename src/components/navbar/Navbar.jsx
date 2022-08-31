@@ -1,7 +1,7 @@
 import '../../style/navbar/navbar.scss';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
-import logo from '../../assets/img/logos/isologo.png';
+import logo from '../../assets/logos/isologo.png';
 
 function Navbar(){
     return(
