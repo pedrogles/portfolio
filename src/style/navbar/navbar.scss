@@ -1,6 +1,6 @@
 @import '../global.scss';
 
-#navbar{
+#navbar {
     position: fixed;
     display: flex;
     justify-content: space-around;
@@ -9,43 +9,43 @@
     width: 100%;
     background-color: #5e5e5e;
     z-index: 1;
-    .navbar-itens{
+    .navbar-itens {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-    .navbar-itens img{
-        width: 3rem;
-        height: 3rem;
-        padding: 0.5rem;
-    }
-    .navbar-itens h1{
-        cursor: default;
-        color: $white;
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
-    .navbar-itens ul{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .navbar-itens ul li{
-        list-style: none;
-    }
-    .navbar-itens ul li a{
-        padding: 0.9rem;
-        color: $white;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 700;
-    }
-    .navbar-itens ul li a:hover{
-        background-color: #757575c0;
-    }
-    .navbar-itens ul li a .navbar-icons{
-        font-size: 1.2rem;
+        img {
+            width: 3rem;
+            height: 3rem;
+            padding: 0.5rem;
+        }
+        h1 {
+            cursor: default;
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            li {
+                list-style: none;
+                a {
+                    padding: 0.9rem;
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    .navbar-icons{
+                        font-size: 1.2rem;
+                    }
+                }
+                a:hover {
+                    background-color: #757575c0;
+                }
+            }
+        }
     }
 }
 @media (max-width: 950px) {
@@ -63,12 +63,12 @@
             ul li a {
                 color: #ffffffad;
             }
-            ul li a:hover{
+            ul li a:hover {
                 background-color: #c0c0c0c5;
                 padding: 0.2rem 0.9rem;
                 border-radius: 20px;
             }
-            .navbar-icons-container{
+            .navbar-icons-container {
                 display: none;
             }
         }
