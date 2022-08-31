@@ -7,7 +7,6 @@ function Card(){
     return (
         <>
             <div id="card">
-                <h2>Projects</h2>
                 <div className='card-elements'>
                     <img src={LiftersShop} 
                     alt="Projeto Lifters Shop." />
