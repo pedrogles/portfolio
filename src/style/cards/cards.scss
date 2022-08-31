@@ -1,0 +1,30 @@
+@import '../global.scss';
+
+#card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .card-elements{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        h2 {
+            margin: 0.5rem 0 0.1rem 0;
+            color: $white;
+        }
+        .card-link a {
+            color: #969696;
+            
+        }
+    }
+}
+@media (max-width: 600px) {
+
+}
+@media (min-width: 601px) and (max-width: 950px) {
+    
+}
+@media (min-width: 1367px){
+}

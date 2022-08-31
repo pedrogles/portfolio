@@ -1,0 +1,32 @@
+@import '../global.scss';
+
+#works{
+    background-color: #000000;
+    position: relative;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .works-elements .works-card img{
+        border: solid 0.01em #c4c4c4c4;
+        border-radius: 10px;
+        width: 500px;
+        height: 300px;
+        box-shadow: 0 0 0.5rem #686868;
+    }
+}
+@media (max-width: 600px) {
+    #works {
+        height: 800px;
+        .works-elements .works-card img{
+            width: 240px;
+            height: 150px;
+        }
+    }
+}
+@media (min-width: 601px) and (max-width: 950px) {
+    
+}
+@media (min-width: 1367px){
+    
+}

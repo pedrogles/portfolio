@@ -1,0 +1,54 @@
+@import '../global.scss';
+
+#carousel{
+    .sc-iBkjds{
+        display: none;
+    }
+    .container-carousel{
+        width: 50rem;
+        button {
+            background-color: transparent;
+            box-shadow: none;
+        }
+        .carousel-elements{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                margin: 0.5rem 0 0.1rem 0;
+                color: $white;
+            }
+            .carousel-link a {
+                color: #969696;
+                
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    #carousel .container-carousel {
+        width: 22rem;
+    }
+}
+@media (min-width: 601px) and (max-width: 950px) {
+    #carousel .container-carousel {
+        width: 30rem;
+    }
+}
+@media (min-width: 1367px){
+    #carousel {
+        .container-carousel {
+            width: 38rem;
+            .carousel-elements{
+                h2 {
+                    font-size: 2rem;
+                }
+                .carousel-link a {
+                    font-size: 1.2rem;
+                    
+                }
+            }
+        }
+    }
+}
