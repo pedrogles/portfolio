@@ -1,7 +1,7 @@
 @import '../global.scss';
 
 #home{
-    background-color: #000000;
+    background-color: $palette2;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -22,14 +22,14 @@
             justify-content: center;
             h2 {
                 cursor: default;
-                color: $white;
+                color: $palette1;
                 font-size: 3rem;
                 font-weight: 700;
                 
             }
             h3 {
                 cursor: default;
-                color: $white;
+                color: $palette1;
                 font-size: 1.3rem;
                 font-weight: 400;
                 width: 400px;
@@ -40,13 +40,13 @@
                     border-radius: 10px;
                     border: none;
                     margin-top: 0.5rem;
-                    background-color: #000000;
+                    background-color: $palette2;
                     width: 8rem;
                     height: 2rem;
                     cursor: pointer;
-                    border: solid 0.1rem $white;
+                    border: solid 0.1rem $palette1;
                     a{
-                        color: $white;
+                        color: $palette1;
                         font-size: 1rem;
                         font-weight: 300;
                         padding: 0.5rem 2.2rem;
@@ -56,7 +56,7 @@
                     }
                 }
                 .btn:hover {
-                    background-color: $white;
+                    background-color: $palette1;
                     a{
                         color: #000000;
                     }
@@ -81,14 +81,14 @@
             justify-content: center;
             h2 {
                 cursor: default;
-                color: $white;
+                color: $palette1;
                 font-size: 2rem;
                 font-weight: 700;
                 
             }
             h3 {
                 cursor: default;
-                color: $white;
+                color: $palette1;
                 font-size: 1rem;
                 font-weight: 400;
                 width: 300px;
@@ -99,13 +99,13 @@
                     border-radius: 10px;
                     border: none;
                     margin-top: 0.5rem;
-                    background-color: #000000;
+                    background-color: $palette2;
                     width: 8rem;
                     height: 2rem;
                     cursor: pointer;
-                    border: solid 0.1rem $white;
+                    border: solid 0.1rem $palette1;
                     a{
-                        color: $white;
+                        color: $palette1;
                         font-size: 1rem;
                         font-weight: 300;
                         padding: 0.5rem 2.2rem;
@@ -115,9 +115,9 @@
                     }
                 }
                 .btn:hover {
-                    background-color: $white;
+                    background-color: $palette1;
                     a{
-                        color: #000000;
+                        color: $palette2;
                     }
                 }
             }
@@ -140,14 +140,14 @@
             justify-content: center;
             h2 {
                 cursor: default;
-                color: $white;
+                color: $palette1;
                 font-size: 2.5rem;
                 font-weight: 700;
                 
             }
             h3 {
                 cursor: default;
-                color: $white;
+                color: $palette1;
                 font-size: 1.2rem;
                 font-weight: 400;
                 width: 400px;
@@ -158,13 +158,13 @@
                     border-radius: 10px;
                     border: none;
                     margin-top: 0.5rem;
-                    background-color: #000000;
+                    background-color: $palette2;
                     width: 8rem;
                     height: 2rem;
                     cursor: pointer;
-                    border: solid 0.1rem $white;
+                    border: solid 0.1rem $palette1;
                     a{
-                        color: $white;
+                        color: $palette1;
                         font-size: 1rem;
                         font-weight: 300;
                         padding: 0.5rem 2.2rem;
@@ -174,9 +174,9 @@
                     }
                 }
                 .btn:hover {
-                    background-color: $white;
+                    background-color: $palette1;
                     a{
-                        color: #000000;
+                        color: $palette2;
                     }
                 }
             }
