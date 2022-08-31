@@ -1,7 +1,7 @@
 import '../../style/cards/cards.scss';
 import GovPB from '../../assets/img/works/govpb.jpeg';
 import LiftersShop from '../../assets/img/works/liftershop.jpeg';
-import LinkTree from '../../assets/img/works/LinkTree.jpeg';
+import LinkTree from '../../assets/img/works/LinkTree.jpg';
 
 function Card(){
     return (
