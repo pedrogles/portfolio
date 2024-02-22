@@ -1,0 +1,102 @@
+@import "../../styles/global.scss";
+
+.router-button {
+    font-size: .8rem;
+    background-color: transparent;
+    padding: .5rem 1.5rem;
+    border: solid .1rem $white_color;
+    border-radius: .2rem;
+    color: $white_color;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 1s ;
+    animation: welcomeButtons 1s;
+}
+.router-button:hover {
+    background-color: #d1d1d1;
+    border: solid .1rem #d1d1d1;
+    color: $black_color;
+}
+
+.fixed-buttons {
+    position: fixed;
+    bottom: 3.5rem;
+    right: .5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .5rem;
+    transition: 1s;
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: solid .1rem #979797;
+        border-radius: .5rem;
+        padding: .5rem;
+        color: $black_color;
+        font-size: .8rem;
+        font-weight: 400;
+        gap: .5rem;
+        .icon {
+            font-size: 1.3rem;
+            color: #979797;
+        }
+    }
+    a.button {
+        pointer-events: none;
+    }
+}
+
+@media (min-width: 381px) and (max-width: 767px) {
+    .router-button {
+        font-size: 1rem;
+    }
+    .fixed-buttons {
+        bottom: 3.8rem;
+        right: 1rem;
+    } 
+}
+
+@media (min-width: 768px) {
+    .router-button {
+        font-size: 1.2rem;
+        padding: 1rem 3rem;
+        border-radius: .5rem;
+    }
+    .fixed-buttons {
+        bottom: 3.8rem;
+        right: 3rem;
+        gap: 1rem;
+        .button {
+            border-radius: .5rem;
+            padding: 1rem;
+            font-size: .8rem;
+            gap: .5rem;
+            cursor: pointer;
+            transition: 1s;
+            .icon {
+                font-size: 2rem;
+                color: #979797;
+            }
+        }
+        .button:hover {
+            background-color: #d1d1d1;
+            border: solid .1rem #d1d1d1;
+            .icon {
+                color: $black_color;
+            }
+        }
+        
+    } 
+}
+
+@keyframes welcomeButtons {
+    0% {
+        transform: scale(.1) translatey(-200px);
+        
+    }
+    100% {
+        transform: scale(1);
+    }
+}

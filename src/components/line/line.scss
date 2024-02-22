@@ -1,0 +1,18 @@
+.line {
+    width: 100%;
+    max-width: 90vw;
+    border: none;
+    border-bottom: solid .1rem #ababab;
+}
+
+@media (min-width: 1440px) and (max-width: 1900px) {
+    .line {
+        max-width: 70vw;
+    }
+}
+
+@media (min-width: 1900px) {
+    .line {
+        max-width: 60vw;
+    }
+}

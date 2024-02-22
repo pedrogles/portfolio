@@ -1,0 +1,373 @@
+@import "../../styles/global.scss";
+
+#projects-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    .projects-title {
+        font-size: 1rem;
+        color: $black_color;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            list-style: none;
+            .project-image {
+                width: 80px;
+                height: 80px;
+            }
+            .project-content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .project-title {
+                    font-size: .9rem;
+                    color: $black_color;
+                    font-weight: 700;
+                }
+                .project-paragraph {
+                    font-size: .8rem;
+                    color: $black_color;
+                    font-weight: 300;
+                    margin: .2rem 0;
+                }
+                .project-a {
+                    text-align: center;
+                    font-size: .75rem;
+                    color: $black_color;
+                    font-weight: 300;
+                    margin-top: .2rem;
+                    text-decoration: none;
+                    border-bottom: solid .1rem #4e4e4e;
+                }
+            }
+        }
+    }
+    .technologies-title {
+        font-size: 1rem;
+        color: $black_color;
+        font-weight: 700;
+    }
+    .technologies-retangle-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .4rem;
+        margin-top: 1rem;
+        .retangle-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .2rem;
+            background-color: #040404cc;
+            min-width: 4.5rem;
+            min-height: 4.5rem;
+            border-radius: 2px;
+            color: $white_color;
+            font-size: .65rem;
+            padding: 1rem;
+            flex-basis: calc(33.33% - .4rem);
+            .retangle-icon {
+                font-size: 1.4rem;
+            }
+            .retangle-name {
+                display: block;
+                cursor: default;
+            }
+        }
+        .retangle-item:hover {
+            transform: scale(1.05);
+        }
+    }
+    .tools-title {
+        font-size: 1rem;
+        color: $black_color;
+        font-weight: 700;
+    }
+    .tools-retangle-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-top: 1rem;
+        .retangle-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .2rem;
+            background-color: #040404cc;
+            min-width: 4.5rem;
+            min-height: 4.5rem;
+            border-radius: 2px;
+            color: $white_color;
+            font-size: .65rem;
+            padding: 1rem;
+            flex-basis: calc(33.33% - .4rem);
+            .retangle-icon {
+                font-size: 1.4rem;
+    
+            }
+            .retangle-name {
+                display: block;
+                cursor: default;
+            }
+        }
+        .retangle-item:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media (min-width: 381px) and (max-width: 767px) {
+    #projects-page {
+        .projects-title {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .projects-list .project-item {
+            flex-direction: row;
+            .project-image {
+                width: 100px;
+                height: 100px;
+            }
+            .project-content {
+                .project-title {
+                    font-size: 1rem;
+                }
+                .project-paragraph {
+                    font-size: .9rem;
+                }
+                .project-a {
+                    font-size: .85rem;
+                }
+            }
+        }
+        .technologies-title {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .tools-title {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #projects-page {
+        margin-top: 4rem;
+        .projects-title {
+            font-size: 1.7rem;
+            margin-bottom: 1.5rem;
+        }
+        .projects-list .project-item {
+            flex-direction: row;
+            .project-image {
+                width: 10rem;
+                height: 10rem;
+            }
+            .project-content {
+                .project-title {
+                    font-size: 1.3rem;
+                }
+                .project-paragraph {
+                    font-size: 1.1rem;
+                    margin: .5rem 0;
+                }
+                .project-a {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .technologies-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        .technologies-retangle-list {
+            gap: .4rem;
+            margin-top: 1rem;
+            .retangle-item {
+                font-size: 1.2rem;
+                padding: 2rem;
+                .retangle-icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .retangle-item:hover {
+                transform: scale(1.02);
+            }
+        }  
+        .tools-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        .tools-retangle-list {
+            gap: .4rem;
+            margin-top: 1rem;
+            .retangle-item {
+                font-size: 1.2rem;
+                padding: 2rem;
+                .retangle-icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .retangle-item:hover {
+                transform: scale(1.02);
+            }
+        }  
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    #projects-page {
+        margin-top: 5rem;
+        .projects-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .projects-list .project-item {
+            flex-direction: row;
+            .project-image {
+                width: 12rem;
+                height: 12rem;
+            }
+            .project-content {
+                .project-title {
+                    font-size: 1.6rem;
+                }
+                .project-paragraph {
+                    font-size: 1.4rem;
+                    margin: .5rem 0;
+                }
+                .project-a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .technologies-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .technologies-retangle-list {
+            gap: .4rem;
+            margin-top: 1rem;
+            .retangle-item {
+                font-size: 1.2rem;
+                padding: 2rem;
+                flex-basis: auto;
+                width: 10rem;
+                height: 10rem;
+                .retangle-icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .retangle-item:hover {
+                transform: scale(1.02);
+            }
+        }  
+        .tools-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .tools-retangle-list {
+            gap: .4rem;
+            margin-top: 1rem;
+            .retangle-item {
+                font-size: 1.2rem;
+                padding: 2rem;
+                flex-basis: auto;
+                width: 10rem;
+                height: 10rem;
+                .retangle-icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .retangle-item:hover {
+                transform: scale(1.02);
+            }
+        }  
+    }
+}
+
+@media (min-width: 1440px) {
+    #projects-page {
+        margin-top: 6rem;
+        .projects-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .projects-list .project-item {
+            flex-direction: row;
+            .project-image {
+                width: 12rem;
+                height: 12rem;
+            }
+            .project-content {
+                .project-title {
+                    font-size: 1.6rem;
+                }
+                .project-paragraph {
+                    font-size: 1.4rem;
+                    margin: .5rem 0;
+                }
+                .project-a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .technologies-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .technologies-retangle-list {
+            gap: .4rem;
+            margin-top: 1rem;
+            .retangle-item {
+                font-size: 1.2rem;
+                padding: 2rem;
+                flex-basis: auto;
+                width: 10rem;
+                height: 10rem;
+                .retangle-icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .retangle-item:hover {
+                transform: scale(1.02);
+            }
+        }  
+        .tools-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .tools-retangle-list {
+            gap: .4rem;
+            margin-top: 1rem;
+            .retangle-item {
+                font-size: 1.2rem;
+                padding: 2rem;
+                flex-basis: auto;
+                width: 10rem;
+                height: 10rem;
+                .retangle-icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .retangle-item:hover {
+                transform: scale(1.02);
+            }
+        }  
+    }
+}
