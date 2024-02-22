@@ -5,12 +5,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    .projects-title {
-        font-size: 1rem;
-        color: $black_color;
-        font-weight: 700;
-        margin-bottom: 1rem;
-    }
     .projects-list {
         display: flex;
         flex-direction: column;
@@ -51,11 +45,6 @@
             }
         }
     }
-    .technologies-title {
-        font-size: 1rem;
-        color: $black_color;
-        font-weight: 700;
-    }
     .technologies-retangle-list {
         display: flex;
         flex-direction: row;
@@ -88,11 +77,6 @@
         .retangle-item:hover {
             transform: scale(1.05);
         }
-    }
-    .tools-title {
-        font-size: 1rem;
-        color: $black_color;
-        font-weight: 700;
     }
     .tools-retangle-list {
         display: flex;
@@ -132,10 +116,6 @@
 
 @media (min-width: 381px) and (max-width: 767px) {
     #projects-page {
-        .projects-title {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
         .projects-list .project-item {
             flex-direction: row;
             .project-image {
@@ -154,24 +134,12 @@
                 }
             }
         }
-        .technologies-title {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
-        .tools-title {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     #projects-page {
         margin-top: 4rem;
-        .projects-title {
-            font-size: 1.7rem;
-            margin-bottom: 1.5rem;
-        }
         .projects-list .project-item {
             flex-direction: row;
             .project-image {
@@ -191,10 +159,6 @@
                 }
             }
         }
-        .technologies-title {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-        }
         .technologies-retangle-list {
             gap: .4rem;
             margin-top: 1rem;
@@ -209,10 +173,6 @@
                 transform: scale(1.02);
             }
         }  
-        .tools-title {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-        }
         .tools-retangle-list {
             gap: .4rem;
             margin-top: 1rem;
@@ -233,10 +193,6 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
     #projects-page {
         margin-top: 5rem;
-        .projects-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
         .projects-list .project-item {
             flex-direction: row;
             .project-image {
@@ -256,10 +212,6 @@
                 }
             }
         }
-        .technologies-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
         .technologies-retangle-list {
             gap: .4rem;
             margin-top: 1rem;
@@ -277,10 +229,6 @@
                 transform: scale(1.02);
             }
         }  
-        .tools-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
         .tools-retangle-list {
             gap: .4rem;
             margin-top: 1rem;
@@ -304,10 +252,6 @@
 @media (min-width: 1440px) {
     #projects-page {
         margin-top: 6rem;
-        .projects-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
         .projects-list .project-item {
             flex-direction: row;
             .project-image {
@@ -327,10 +271,6 @@
                 }
             }
         }
-        .technologies-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
         .technologies-retangle-list {
             gap: .4rem;
             margin-top: 1rem;
@@ -348,10 +288,6 @@
                 transform: scale(1.02);
             }
         }  
-        .tools-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
         .tools-retangle-list {
             gap: .4rem;
             margin-top: 1rem;

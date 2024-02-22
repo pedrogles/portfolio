@@ -1,8 +1,8 @@
 import Section from "../../components/section/Section";
-
-import { FixedButtons } from "../../components/buttons/Buttons";
-
 import Line from "../../components/line/Line";
+
+import { Title } from "../../components/texts/title/Title";
+import { FixedButtons } from "../../components/buttons/Buttons";
 
 import "./about.scss";
 
@@ -29,7 +29,7 @@ export default function About({ data }) {
                 <Line />
 
                 <Section>
-                    <h3 className="experiences-title">Experiências</h3>
+                    <Title name="Experiências" />
                     <ul className="experiences-list">
                     {experiences.map((experience) => {
                         return (
@@ -46,7 +46,7 @@ export default function About({ data }) {
                 <Line />
 
                 <Section>
-                    <h3 className="education-title">Educação</h3>
+                    <Title name="Educação" />
                     <ul className="education-list">
                     {educations.map((education) => {
                         return (

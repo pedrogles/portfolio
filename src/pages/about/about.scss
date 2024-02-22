@@ -36,11 +36,6 @@
         color: $black_color;
         font-weight: 400;
     }
-    .experiences-title {
-        font-size: 1rem;
-        color: $black_color;
-        font-weight: 700;
-    }
     .experiences-list {
         margin-left: 1.6rem;
         .item {
@@ -65,11 +60,6 @@
         .item::marker {
             color: $black_color;
         }
-    }
-    .education-title {
-        font-size: 1rem;
-        color: $black_color;
-        font-weight: 700;
     }
     .education-list {
         margin-left: 1.6rem;
@@ -116,9 +106,6 @@
         .about-paragraph {
             font-size: .95rem;
         }
-        .education-title {
-            font-size: 1.2rem;
-        }
         .education-list {
             margin-left: 2.2rem;
             .item {
@@ -132,9 +119,6 @@
                     font-size: .9rem;
                 }
             }
-        }
-        .experiences-title {
-            font-size: 1.2rem;
         }
         .experiences-list {
             margin-left: 2.2rem;
@@ -173,10 +157,6 @@
             margin-top: 1rem;
             font-size: 1.2rem;
         }
-        .experiences-title {
-            font-size: 1.7rem;
-            margin-bottom: 1.5rem;
-        }
         .experiences-list {
             margin-left: 2.5rem;
             .item {
@@ -190,10 +170,6 @@
                     font-size: 1.2rem;
                 }
             }
-        }
-        .education-title {
-            font-size: 1.7rem;
-            margin-bottom: 1.5rem;
         }
         .education-list {
             margin-left: 2.5rem;
@@ -232,10 +208,6 @@
             margin-top: 1rem;
             font-size: 1.6rem;
         }
-        .education-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
         .education-list {
             margin-left: 2.5rem;
             .item {
@@ -249,10 +221,6 @@
                     font-size: 1.5rem;
                 }
             }
-        }
-        .experiences-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
         }
         .experiences-list {
             margin-left: 2.5rem;
@@ -291,10 +259,6 @@
             margin-top: 1rem;
             font-size: 1.6rem;
         }
-        .education-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
         .education-list {
             margin-left: 2.5rem;
             .item {
@@ -308,10 +272,6 @@
                     font-size: 1.5rem;
                 }
             }
-        }
-        .experiences-title {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
         }
         .experiences-list {
             margin-left: 2.5rem;
