@@ -158,7 +158,7 @@ export const data = {
                 img: rv_image ,
                 alt: "Imagem com cor de fundo bege contendo as letras R e V ao centro, com a letra 'R' incorporando um rosto feminino de traços suaves e cabelos ondulados. Abaixo das letras, destaca-se o texto 'Bendita Beleza' e após a palavra 'Cabeleireira'.",
                 paragraph: "Website moderno e elegante, que destaca os serviços disponíveis e já realizados do salão, com uma experiência fácil e agradável para os visitantes.",
-                link: "https://bendita-beleza.vercel.app/",
+                link: "https://benditabeleza.vercel.app/",
                 text: "Visite clicando aqui."
             },
             {
