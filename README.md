@@ -1,43 +1,51 @@
-# Apresentação 
-<p>Bem-vindo ao Github do meu site de portfólio! No portfólio você encontrará uma breve descrição sobre mim e uma coleção selecionada dos meu trabalhos, mostrando minhas habilidades e experiências em desenvolvimento e design web.</p>
 
-## Página inicial
+# Portfólio
+
+>  Web portfólio onde você encontrará uma breve descrição sobre mim e uma coleção selecionada dos meu trabalhos, mostrando minhas habilidades e experiências em desenvolvimento e design web.
+
 ![screencapture-portfolio-pedrogles-vercel-app-2024-02-25-19_01_23](https://github.com/pedrogles/portfolio/assets/76228682/87225d31-d09f-456a-918e-1e95750fee11)
 
-## Página Sobre
-![screencapture-portfolio-pedrogles-vercel-app-sobre-2024-02-25-19_01_37](https://github.com/pedrogles/portfolio/assets/76228682/f32d88e7-b4c3-47b1-9bf8-dcce7102852e)
+## Tecnologias Utilizadas
 
-## Página Projetos
-![screencapture-portfolio-pedrogles-vercel-app-projetos-2024-02-25-19_02_50](https://github.com/pedrogles/portfolio/assets/76228682/821493fb-dc38-4aa6-9e87-85ffab77af2a)
+- **React**: Uma biblioteca JavaScript para construção de interfaces de usuário.
+- **React Router Dom**: Biblioteca de roteamento leve e completa para o React, que permite a criação de rotas dinâmicas em aplicativos da web.
+- **React Icons**: Uma biblioteca que fornece uma maneira conveniente de utilizar ícones de várias bibliotecas em projetos React.
+- **Scss**:  Linguagem de folhas de estilo que estende o CSS tradicional. Suas vantagens incluem a capacidade de declarar variáveis e usar uma sintaxe de aninhamento mais limpa.
 
-## Tecnologias utilizadas
+## Características
 
-- `Reactjs`
-- `React Icons`
-- `React Router Dom`
-- `Sass`
+- Design responsivo que se adapta a diferentes tamanhos de tela.
+- Componentes reutilizáveis criados com React.
+- Estilização personalizada e moderna com Scss.
+- Ícones de várias bibliotecas disponíveis através do React Icons.
+
+## Como Executar o Projeto
+
+1. Clone o repositório para a sua máquina local:
+
+   ```
+   git clone https://github.com/pedrogles/portfolio.git
+   ```
+   
+2. Instale as dependências do projeto:
+   
+   ```
+   npm install
+   ```
+   
+3. Inicie o servidor de desenvolvimento: <br>
+
+   ```
+   npm run dev
+   ```
+    
+4. Abra `http://localhost:5173/` no seu navegador para ver a aplicação.
 
 ## Autor
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/76228682?s=400&u=aaf31f62d04947559642f8f8e2d166faf39d5d86&v=4" width=115><br><sub>Pedro Gabriel</sub>](https://github.com/pedrogles) | 
 | :---: | 
 
-## 📁 Acesso ao projeto
+## Contribuições
 
-<p>Você pode acessar os arquivos do projeto clicando <a href="https://github.com/pedrogles/portfolio">aqui</a></p>
+Contribuições são sempre bem-vindas. Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## 🛠️ Abrir e rodar o projeto
-
-### Necessário:
-- Nodejs instalado
-
-### Instruções:
-- Abra o projeto no editor de códigos de sua preferência(ex: Visual Studio Code)
-- Abra o terminal
-- Execute o comando `npm install`;
-- Após a instalação, execute o comando `npm run dev`
-
-## React + Vite
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-Currently, two official plugins are available:
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
