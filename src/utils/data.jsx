@@ -3,10 +3,11 @@ import rcc_image from "../assets/logo/rcc.png";
 import rv_image from "../assets/logo/rv.svg";
 import tre_image from "../assets/logo/tre.png";
 import lt_image from "../assets/logo/linktree.svg";
+import converx_image from "../assets/logo/converx.svg";
 
 import { DiSass } from "react-icons/di";
 import { FiFigma, FiPhone, FiMail } from "react-icons/fi";
-import { SiAdobephotoshop, SiAdobeillustrator, SiNodedotjs, SiJavascript, SiReact, SiGithub, SiGit, SiLinkedin, SiWhatsapp, SiHtml5, SiCss3  } from "react-icons/si";
+import { SiAdobephotoshop, SiAdobeillustrator, SiNodedotjs, SiJavascript, SiReact, SiGithub, SiGit, SiLinkedin, SiWhatsapp, SiHtml5, SiCss3, SiTailwindcss   } from "react-icons/si";
 
 export const data = {
     user: {
@@ -76,24 +77,14 @@ export const data = {
         ],
         technologies: [
             {
-                id: 7,
-                name: "Html5",
-                icon: <SiHtml5/>
-            },
-            {
-                id: 6,
-                name: "Css3",
-                icon: <SiCss3/>
-            },
-            {
-                id: 5,
-                name: "JavaScript",
-                icon: <SiJavascript/>
-            },
-            {
-                id: 4,
+                id: 1,
                 name: "React",
                 icon: <SiReact/>
+            },
+            {
+                id: 2,
+                name: "JavaScript",
+                icon: <SiJavascript/>
             },
             {
                 id: 3,
@@ -101,17 +92,32 @@ export const data = {
                 icon: <SiNodedotjs/>
             },
             {
-                id: 2,
+                id: 4,
+                name: "Html5",
+                icon: <SiHtml5/>
+            },
+            {
+                id: 5,
+                name: "Css3",
+                icon: <SiCss3/>
+            },
+            {
+                id: 6,
                 name: "Scss",
                 icon: <DiSass/>
             },
             {
-                id: 1,
+                id: 7,
+                name: "Tailwind",
+                icon: <SiTailwindcss />
+            },
+            {
+                id: 8,
                 name: "Git",
                 icon: <SiGit/>
             },
             {
-                id: 0,
+                id: 9,
                 name: "Github",
                 icon: <SiGithub/>
             }
@@ -135,12 +141,12 @@ export const data = {
         ],
         projects: [
             {
-                id: 3,
-                title: "Portfólio Renato César",
-                img: rcc_image ,
-                alt: "Imagem com cor de fundo verde escuro contendo as letras R, C e C centralizadas dentro de um quadrado semifechado, referência a Renato César Carneiro.",
-                paragraph: "Projeto desenvolvido com o intuito de modernizar e facilitar o compartilhamento de suas publicações, utilizando um design agradável, simples e direto.",
-                link: "https://linktree-pedrogles.vercel.app/assets/portfolio-renato-cesar-4b812987.pdf",
+                id: 1,
+                title: "Bendita Beleza - Renata Victor",
+                img: rv_image ,
+                alt: "Imagem com cor de fundo bege contendo as letras R e V ao centro, com a letra 'R' incorporando um rosto feminino de traços suaves e cabelos ondulados. Abaixo das letras, destaca-se o texto 'Bendita Beleza' e após a palavra 'Cabeleireira'.",
+                paragraph: "Website moderno e elegante, que destaca os serviços disponíveis e já realizados do salão, com uma experiência fácil e agradável para os visitantes.",
+                link: "https://benditabeleza.vercel.app/",
                 text: "Visite clicando aqui."
             },
             {
@@ -153,21 +159,30 @@ export const data = {
                 text: "Visite clicando aqui."
             },
             {
-                id: 1,
-                title: "Bendita Beleza - Renata Victor",
-                img: rv_image ,
-                alt: "Imagem com cor de fundo bege contendo as letras R e V ao centro, com a letra 'R' incorporando um rosto feminino de traços suaves e cabelos ondulados. Abaixo das letras, destaca-se o texto 'Bendita Beleza' e após a palavra 'Cabeleireira'.",
-                paragraph: "Website moderno e elegante, que destaca os serviços disponíveis e já realizados do salão, com uma experiência fácil e agradável para os visitantes.",
-                link: "https://benditabeleza.vercel.app/",
+                id: 3,
+                title: "Portfólio Renato César",
+                img: rcc_image ,
+                alt: "Imagem com cor de fundo verde escuro contendo as letras R, C e C centralizadas dentro de um quadrado semifechado, referência a Renato César Carneiro.",
+                paragraph: "Projeto desenvolvido com o intuito de modernizar e facilitar o compartilhamento de suas publicações, utilizando um design agradável, simples e direto.",
+                link: "https://linktree-pedrogles.vercel.app/assets/portfolio-renato-cesar-4b812987.pdf",
                 text: "Visite clicando aqui."
-            },
+            },  
             {
-                id: 0,
+                id: 4,
                 title: "LinkTree - Pedro Gabriel",
                 img: lt_image,
                 alt: "",
                 paragraph: "Simples, direto e informativo: meu Linktree. Explore meu portfólio e conexões online com facilidade.",
                 link: "https://linktree-pedrogles.vercel.app/",
+                text: "Visite clicando aqui."
+            },
+            {
+                id: 5,
+                title: "Converx - Conversor de Moedas",
+                img: converx_image,
+                alt: "",
+                paragraph: "Ferramenta prática e eficiente que permite aos usuários converter valores entre diferentes moedas globais.",
+                link: "https://converxx.vercel.app/",
                 text: "Visite clicando aqui."
             }
         ]
