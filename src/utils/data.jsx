@@ -15,7 +15,7 @@ export const data = {
         profession: "Desenvolvedor e Web Designer",
         image: user_image,
         altimage: "Foto do rosto de Pedro Gabriel visto de frente. Ele utiliza óculos de grau, bigode e barba rala. A foto contém fundo branco e bordas arredondadas.",
-        social_links: [
+        social: [
             {
                 id: 0,
                 icon: <SiLinkedin/>,
