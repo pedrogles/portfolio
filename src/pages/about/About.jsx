@@ -4,9 +4,11 @@ import Line from "../../components/line/Line";
 import { Title } from "../../components/texts/title/Title";
 import { FixedButtons } from "../../components/buttons/Buttons";
 
+import { data } from "../../utils/data";
+
 import "./about.scss";
 
-export default function About({ data }) {
+export default function About() {
     const user = data.user;
     const aboutme = data.user.aboutme;
     const experiences = data.user.experiences;

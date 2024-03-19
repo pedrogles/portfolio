@@ -1,6 +1,8 @@
+import { data } from "../../utils/data";
+
 import "./footer.scss";
 
-export default function Footer({data}) {
+export default function Footer() {
     const social_links = data.user.social_links;
     const year = new Date().getFullYear();
     return (

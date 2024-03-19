@@ -3,9 +3,11 @@ import Section from "../../components/section/Section";
 import { Title } from "../../components/texts/title/Title";
 import { FixedButtons } from "../../components/buttons/Buttons";
 
+import { data } from "../../utils/data";
+
 import "./projects.scss";
 
-export default function Projects({ data }) {
+export default function Projects() {
     const projects = data.user.projects;
     return (
         <main id="projects-page">
