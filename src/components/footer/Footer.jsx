@@ -1,12 +1,12 @@
 import "./footer.scss";
 
 export default function Footer({data}) {
-    const links = data.user.links;
+    const social_links = data.user.social_links;
     const year = new Date().getFullYear();
     return (
         <footer id="footer">
             <ul className="link-icons">
-                {links.map((link, key) => {
+                {social_links.map((link, key) => {
                     return (
                         <li key={key}>
                             <a className="link" href={link.href} target="_blank" rel="noopener noreferrer">

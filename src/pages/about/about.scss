@@ -86,6 +86,39 @@
             color: $black_color;
         }
     }
+    .skills-retangle-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .4rem;
+        margin-top: 1rem;
+        .retangle-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .2rem;
+            background-color: #040404cc;
+            min-width: 4.5rem;
+            min-height: 4.5rem;
+            border-radius: 2px;
+            color: $white_color;
+            font-size: .65rem;
+            padding: 1rem;
+            flex-basis: calc(33.33% - .4rem);
+            .retangle-icon {
+                font-size: 1.4rem;
+            }
+            .retangle-name {
+                display: block;
+                cursor: default;
+            }
+        }
+        .retangle-item:hover {
+            transform: scale(1.05);
+        }
+    }
 }
 
 @media (min-width: 381px) and (max-width: 767px) {
@@ -185,6 +218,20 @@
                 }
             }
         }
+        .skills-retangle-list {
+            gap: .4rem;
+            margin-top: 1rem;
+            .retangle-item {
+                font-size: 1.2rem;
+                padding: 2rem;
+                .retangle-icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .retangle-item:hover {
+                transform: scale(1.02);
+            }
+        }  
     }
 }
 
@@ -236,6 +283,23 @@
                 }
             }
         }
+        .skills-retangle-list {
+            gap: .4rem;
+            margin-top: 1rem;
+            .retangle-item {
+                font-size: 1.2rem;
+                padding: 2rem;
+                flex-basis: auto;
+                width: 10rem;
+                height: 10rem;
+                .retangle-icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .retangle-item:hover {
+                transform: scale(1.02);
+            }
+        } 
     }
 }
 
@@ -285,6 +349,23 @@
                 .item-subtitle {
                     font-size: 1.5rem;
                 }
+            }
+        }
+        .skills-retangle-list {
+            gap: .4rem;
+            margin-top: 1rem;
+            .retangle-item {
+                font-size: 1.2rem;
+                padding: 2rem;
+                flex-basis: auto;
+                width: 10rem;
+                height: 10rem;
+                .retangle-icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .retangle-item:hover {
+                transform: scale(1.02);
             }
         }
     }

@@ -15,14 +15,14 @@ export const data = {
         profession: "Desenvolvedor e Web Designer",
         image: user_image,
         altimage: "Foto do rosto de Pedro Gabriel visto de frente. Ele utiliza óculos de grau, bigode e barba rala. A foto contém fundo branco e bordas arredondadas.",
-        links: [
+        social_links: [
             {
-                id: 4,
+                id: 0,
                 icon: <SiLinkedin/>,
                 href: "https://www.linkedin.com/in/pedrogles/"
             }, 
             {
-                id: 3,
+                id: 1,
                 icon: <SiGithub/>,
                 href: "https://github.com/pedrogles"
             },
@@ -32,18 +32,18 @@ export const data = {
                 href: "https://api.whatsapp.com/send?phone=5583996082302"
             },
             {
-                id: 1,
+                id: 3,
                 icon: <FiPhone/>,
                 href: "tel:+5583996082302"
             }, 
             {
-                id: 0,
+                id: 4,
                 icon: <FiMail/>,
                 href: "mailto:pedrogabriellima@gmail.com"
             }
         ],
         aboutme: [
-            "Olá, sou Desenvolvedor Front-end e Web Designer apaixonado por criar experiências digitais interativas e amigáveis ao usuário. Tenho experiência em trabalhar com tecnologias modernas como o Reactjs e estou sempre buscando aprender e dominar as últimas tendências em desenvolvimento web.", 
+            "Olá, sou Desenvolvedor Front-end e Web Designer apaixonado por criar experiências digitais interativas e amigáveis ao usuário. Tenho experiência em trabalhar com tecnologias e ferramentas modernas como Reactjs e Figma, buscando sempre aprender e dominar as últimas tendências em desenvolvimento web.", 
             "Aqui, você encontrará uma seleção dos meus projetos mais recentes, que demonstram minha habilidade em transformar designs complexos em interfaces de usuário limpas e eficientes.", 
             "Estou sempre aberto a novas oportunidades e desafios. Se você tem um projeto em mente ou simplesmente quer dizer oi, sinta-se à vontade para entrar em contato comigo."
         ],
@@ -75,73 +75,71 @@ export const data = {
                 subtitle: "Sistemas para Internet"
             }
         ],
-        technologies: [
+        skills: [
             {
-                id: 1,
+                id: 0,
                 name: "React",
                 icon: <SiReact/>
             },
             {
-                id: 2,
+                id: 1,
                 name: "JavaScript",
                 icon: <SiJavascript/>
             },
             {
-                id: 3,
+                id: 2,
                 name: "Node",
                 icon: <SiNodedotjs/>
             },
             {
-                id: 4,
+                id: 3,
                 name: "Html5",
                 icon: <SiHtml5/>
             },
             {
-                id: 5,
+                id: 4,
                 name: "Css3",
                 icon: <SiCss3/>
             },
             {
-                id: 6,
+                id: 5,
                 name: "Scss",
                 icon: <DiSass/>
             },
             {
-                id: 7,
+                id: 6,
                 name: "Tailwind",
                 icon: <SiTailwindcss />
             },
             {
-                id: 8,
+                id: 7,
                 name: "Git",
                 icon: <SiGit/>
             },
             {
-                id: 9,
+                id: 8,
                 name: "Github",
                 icon: <SiGithub/>
-            }
-        ],
-        tools: [
+            },
             {
-                id: 2,
+                id: 9,
                 name: "Figma",
                 icon: <FiFigma/>
             },
             {
-                id: 1,
+                id: 10,
                 name: "Photoshop",
                 icon: <SiAdobephotoshop/>
             },
             {
-                id: 0,
+                id: 11,
                 name: "Illustrator",
                 icon: <SiAdobeillustrator/>
             }
         ],
         projects: [
             {
-                id: 1,
+                id: 0,
                 title: "Bendita Beleza - Renata Victor",
                 img: rv_image ,
                 alt: "Imagem com cor de fundo bege contendo as letras R e V ao centro, com a letra 'R' incorporando um rosto feminino de traços suaves e cabelos ondulados. Abaixo das letras, destaca-se o texto 'Bendita Beleza' e após a palavra 'Cabeleireira'.",
@@ -150,7 +148,7 @@ export const data = {
                 text: "Visite clicando aqui."
             },
             {
-                id: 2,
+                id: 1,
                 title: "Informativo TRE-PB",
                 img: tre_image,
                 alt: "Imagem com cor de fundo branca, contendo o texto 'Informativo TRE-PB' ao centro e logotipo posicionada acima do texto 'TRE-PB'. O logotipo é composto por 3 itens geométricos, um círculo azul com estrelas brancas em seu interior, um pentágono de cor amarela e um triângulo de cor verde, fazendo referência a bandeira do brasil.",
@@ -159,7 +157,7 @@ export const data = {
                 text: "Visite clicando aqui."
             },
             {
-                id: 3,
+                id: 2,
                 title: "Portfólio Renato César",
                 img: rcc_image ,
                 alt: "Imagem com cor de fundo verde escuro contendo as letras R, C e C centralizadas dentro de um quadrado semifechado, referência a Renato César Carneiro.",
@@ -168,7 +166,7 @@ export const data = {
                 text: "Visite clicando aqui."
             },  
             {
-                id: 4,
+                id: 3,
                 title: "LinkTree - Pedro Gabriel",
                 img: lt_image,
                 alt: "",
@@ -177,7 +175,7 @@ export const data = {
                 text: "Visite clicando aqui."
             },
             {
-                id: 5,
+                id: 4,
                 title: "Converx - Conversor de Moedas",
                 img: converx_image,
                 alt: "",
