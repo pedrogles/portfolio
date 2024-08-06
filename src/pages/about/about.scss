@@ -36,87 +36,25 @@
         color: $black_color;
         font-weight: 400;
     }
-    .experiences-list {
+    .experiences-list, .education-list {
         margin-left: 1.6rem;
-        .item {
-            margin-top: 1rem;
-            .item-title {
-                font-size: .8rem;
-                color: $black_color;
-                font-weight: 700;
-            }
-            .item-paragraph {
-                font-size: .6rem;
-                color: $black_color;
-                font-weight: 300;
-                margin: .2rem 0;
-            }
-            .item-subtitle {
-                font-size: .7rem;
-                color: $black_color;
-                font-weight: 400;
-            }
-        }
-        .item::marker {
-            color: $black_color;
-        }
     }
-    .education-list {
-        margin-left: 1.6rem;
-        .item {
-            margin-top: 1rem;
-            .item-title {
-                font-size: .8rem;
-                color: $black_color;
-                font-weight: 700;
-            }
-            .item-paragraph {
-                font-size: .6rem;
-                color: $black_color;
-                font-weight: 300;
-                margin: .2rem 0;
-            }
-            .item-subtitle {
-                font-size: .7rem;
-                color: $black_color;
-                font-weight: 400;
-            }
-        }
-        .item::marker {
-            color: $black_color;
-        }
+    .softskills {
+        margin: .5rem 0 .8rem 0;
+        font-size: .8rem;
+        color: $black_color;
+        font-weight: 400;
     }
-    .skills-retangle-list {
+    .hardskills-list {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: .4rem;
-        margin-top: 1rem;
-        .retangle-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: .2rem;
-            background-color: #040404cc;
-            min-width: 4.5rem;
-            min-height: 4.5rem;
-            border-radius: 2px;
-            color: $white_color;
-            font-size: .65rem;
-            padding: 1rem;
-            flex-basis: calc(33.33% - .4rem);
-            .retangle-icon {
-                font-size: 1.4rem;
-            }
-            .retangle-name {
-                display: block;
-                cursor: default;
-            }
-        }
-        .retangle-item:hover {
-            transform: scale(1.05);
+        flex-direction: column;
+        gap: .5rem;
+        margin-top: .5rem;
+        .hardskills-item {
+            list-style: none;
+            font-size: .8rem;
+            color: $black_color;
+            font-weight: 400;
         }
     }
 }
@@ -139,33 +77,14 @@
         .about-paragraph {
             font-size: .95rem;
         }
-        .education-list {
+        .experiences-list, .education-list {
             margin-left: 2.2rem;
-            .item {
-                .item-title {
-                    font-size: 1rem;
-                }
-                .item-paragraph {
-                    font-size: .8rem;
-                }
-                .item-subtitle {
-                    font-size: .9rem;
-                }
-            }
         }
-        .experiences-list {
-            margin-left: 2.2rem;
-            .item {
-                .item-title {
-                    font-size: 1rem;
-                }
-                .item-paragraph {
-                    font-size: .8rem;
-                }
-                .item-subtitle {
-                    font-size: .9rem;
-                }
-            }
+        .softskills {
+            font-size: .95rem;
+        }
+        .hardskills-list .hardskills-item {
+            font-size: .95rem;
         }
     }
 }
@@ -190,48 +109,20 @@
             margin-top: 1rem;
             font-size: 1.2rem;
         }
-        .experiences-list {
-            margin-left: 2.5rem;
-            .item {
-                .item-title {
-                    font-size: 1.3rem;
-                }
-                .item-paragraph {
-                    font-size: 1.1rem;
-                }
-                .item-subtitle {
-                    font-size: 1.2rem;
-                }
-            }
+        .experiences-list, .education-list {
+            margin-left: 1.5rem;
         }
-        .education-list {
-            margin-left: 2.5rem;
-            .item {
-                .item-title {
-                    font-size: 1.3rem;
-                }
-                .item-paragraph {
-                    font-size: 1.1rem;
-                }
-                .item-subtitle {
-                    font-size: 1.2rem;
-                }
-            }
+        .softskills {
+            margin: .7rem 0 1rem 0;
+            font-size: 1.2rem;
         }
-        .skills-retangle-list {
-            gap: .4rem;
-            margin-top: 1rem;
-            .retangle-item {
+        .hardskills-list {
+            gap: .7rem;
+            margin-top: .7rem;
+            .hardskills-item {
                 font-size: 1.2rem;
-                padding: 2rem;
-                .retangle-icon {
-                    font-size: 2.5rem;
-                }
             }
-            .retangle-item:hover {
-                transform: scale(1.02);
-            }
-        }  
+        }
     }
 }
 
@@ -255,51 +146,20 @@
             margin-top: 1rem;
             font-size: 1.6rem;
         }
-        .education-list {
-            margin-left: 2.5rem;
-            .item {
-                .item-title {
-                    font-size: 1.6rem;
-                }
-                .item-paragraph {
-                    font-size: 1.4rem;
-                }
-                .item-subtitle {
-                    font-size: 1.5rem;
-                }
-            }
+        .experiences-list, .education-list {
+            margin-left: 1.5rem;
         }
-        .experiences-list {
-            margin-left: 2.5rem;
-            .item {
-                .item-title {
-                    font-size: 1.6rem;
-                }
-                .item-paragraph {
-                    font-size: 1.4rem;
-                }
-                .item-subtitle {
-                    font-size: 1.5rem;
-                }
-            }
+        .softskills {
+            margin: 1rem 0 1.3rem 0;
+            font-size: 1.5rem;
         }
-        .skills-retangle-list {
-            gap: .4rem;
+        .hardskills-list {
+            gap: 1rem;
             margin-top: 1rem;
-            .retangle-item {
-                font-size: 1.2rem;
-                padding: 2rem;
-                flex-basis: auto;
-                width: 10rem;
-                height: 10rem;
-                .retangle-icon {
-                    font-size: 2.5rem;
-                }
+            .hardskills-item {
+                font-size: 1.5rem;
             }
-            .retangle-item:hover {
-                transform: scale(1.02);
-            }
-        } 
+        }
     }
 }
 
@@ -323,49 +183,18 @@
             margin-top: 1rem;
             font-size: 1.6rem;
         }
-        .education-list {
-            margin-left: 2.5rem;
-            .item {
-                .item-title {
-                    font-size: 1.6rem;
-                }
-                .item-paragraph {
-                    font-size: 1.4rem;
-                }
-                .item-subtitle {
-                    font-size: 1.5rem;
-                }
-            }
+        .experiences-list, .education-list {
+            margin-left: 1.5rem;
         }
-        .experiences-list {
-            margin-left: 2.5rem;
-            .item {
-                .item-title {
-                    font-size: 1.6rem;
-                }
-                .item-paragraph {
-                    font-size: 1.4rem;
-                }
-                .item-subtitle {
-                    font-size: 1.5rem;
-                }
-            }
+        .softskills {
+            margin: 1rem 0 1.3rem 0;
+            font-size: 1.6rem;
         }
-        .skills-retangle-list {
-            gap: .4rem;
+        .hardskills-list {
+            gap: 1rem;
             margin-top: 1rem;
-            .retangle-item {
-                font-size: 1.2rem;
-                padding: 2rem;
-                flex-basis: auto;
-                width: 10rem;
-                height: 10rem;
-                .retangle-icon {
-                    font-size: 2.5rem;
-                }
-            }
-            .retangle-item:hover {
-                transform: scale(1.02);
+            .hardskills-item {
+                font-size: 1.6rem;
             }
         }
     }

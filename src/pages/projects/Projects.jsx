@@ -1,7 +1,7 @@
 import Section from "../../components/section/Section";
 
-import { Title } from "../../components/texts/title/Title";
-import { FixedButtons } from "../../components/buttons/Buttons";
+import { H3, H4 } from "../../components/texts/index";
+import { FixedButtons } from "../../components/buttons";
 
 import { data } from "../../utils/data";
 
@@ -12,14 +12,14 @@ export default function Projects() {
     return (
         <main id="projects-page">
             <Section>
-                <Title name="Projetos Recentes" />
+                <H3>Projetos Recentes</H3>
                 <ul className="projects-list">
                 {projects.map((project) => {
                     return (
                         <li className="project-item" key={project.id}>
                             <img className="project-image" src={project.img} alt={project.alt} /> 
                             <div className="project-content">
-                                <h4 className="project-title">{project.title}</h4>
+                                <H4>{project.title}</H4>
                                 <p className="project-paragraph">{project.paragraph}</p>
                                 <a className="project-a" href={project.link} target="_blank" rel="noopener noreferrer">
                                     {project.text}

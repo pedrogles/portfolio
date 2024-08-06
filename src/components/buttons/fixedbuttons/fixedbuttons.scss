@@ -1,0 +1,58 @@
+@import "../../../styles/global.scss";
+
+.fixed-buttons {
+    position: fixed;
+    bottom: 3.5rem;
+    right: .5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .5rem;
+    transition: 1s;
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white_color;
+        border: solid .05rem $black_color;
+        border-radius: .5rem;
+        padding: .5rem;
+        color: $white_color;
+        font-size: .8rem;
+        font-weight: 400;
+        gap: .5rem;
+        .icon {
+            font-size: 1.3rem;
+            color: $black_color;
+        }
+    }
+    .button:hover {
+        background-color: #919191;
+    }
+}
+
+@media (min-width: 381px) and (max-width: 767px) {
+    .fixed-buttons {
+        bottom: 3.8rem;
+        right: 1rem;
+    } 
+}
+
+@media (min-width: 768px) {
+    .fixed-buttons {
+        bottom: 3.8rem;
+        right: 3rem;
+        gap: 1rem;
+        .button {
+            border-radius: .5rem;
+            padding: 1rem;
+            font-size: .8rem;
+            gap: .5rem;
+            cursor: pointer;
+            transition: 1s;
+            .icon {
+                font-size: 2rem;
+            }
+        }
+        
+    } 
+}

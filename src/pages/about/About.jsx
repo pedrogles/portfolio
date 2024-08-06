@@ -1,8 +1,9 @@
 import Section from "../../components/section/Section";
+import SectionList from "../../components/sectionList/SectionList";
 import Line from "../../components/line/Line";
 
-import { Title } from "../../components/texts/title/Title";
-import { FixedButtons } from "../../components/buttons/Buttons";
+import { H3, H4 } from "../../components/texts/index";
+import { FixedButtons } from "../../components/buttons";
 
 import { data } from "../../utils/data";
 
@@ -10,10 +11,9 @@ import "./about.scss";
 
 export default function About() {
     const user = data.user;
-    const aboutme = data.user.aboutme;
-    const experiences = data.user.experiences;
-    const educations = data.user.educations;
-    const skills = data.user.skills;
+    const { aboutme, experiences, educations, skills } = user;
+    const { hard, soft} = skills;
+    const softSkills = soft.join(', ');
     return (
             <main id="about-page" >
                 <Section>
@@ -23,40 +23,41 @@ export default function About() {
                         <p className="user-profession">{user.profession}</p>
                     </div>
                     {aboutme.map((paragraph, key) => {
-                        return (
-                            <p key={key} className="about-paragraph">{paragraph}</p>
-                        )
+                        return <p key={key} className="about-paragraph">{paragraph}</p>
                     })}
                 </Section>
 
                 <Line/>
 
                 <Section>
-                    <Title name="Competências" />
-                    <ul className="skills-retangle-list">
-                    {skills.map((skill) => {
-                        return (
-                            <li className="retangle-item" key={skill.id}>
-                                <div className="retangle-icon">{skill.icon}</div>
-                                <p className="retangle-name">{skill.name}</p>
-                            </li>
-                        )
-                    })}
+                    <H3>Competências</H3>
+                    <H4>Soft Skills</H4>
+                    <p className="softskills">{softSkills}</p>
+                    <H4>Hard Skills</H4>
+                    <ul className="hardskills-list">
+                        {hard.map((skill) => {
+                            return (
+                                <li className="hardskills-item" key={skill.id}>
+                                    <strong>{skill.name}:</strong> {skill.text}
+                                </li>
+                            )
+                        })}
                     </ul>
                 </Section>
 
                 <Line />
 
                 <Section>
-                    <Title name="Experiências" />
+                    <H3>Experiências</H3>
                     <ul className="experiences-list">
                     {experiences.map((experience) => {
                         return (
-                            <li className="item"  key={experience.id}>
-                                <h4 className="item-title">{experience.title}</h4>
-                                <p className="item-paragraph">{experience.paragraph}</p>
-                                <h5 className="item-subtitle">{experience.subtitle}</h5>
-                            </li>
+                            <SectionList 
+                                key={experience.id} 
+                                title={experience.title} 
+                                paragraph={experience.paragraph} 
+                                subtitle={experience.subtitle} 
+                            />
                         )
                     })}
             </ul>
@@ -65,15 +66,16 @@ export default function About() {
                 <Line />
 
                 <Section>
-                    <Title name="Formação" />
+                    <H3>Formação</H3>
                     <ul className="education-list">
                         {educations.map((education) => {
                             return (
-                                <li className="item"  key={education.id}>
-                                    <h4 className="item-title">{education.title}</h4>
-                                    <p className="item-paragraph">{education.paragraph}</p>
-                                    <h5 className="item-subtitle">{education.subtitle}</h5>
-                                </li>
+                                <SectionList 
+                                    key={education.id} 
+                                    title={education.title} 
+                                    paragraph={education.paragraph} 
+                                    subtitle={education.subtitle} 
+                                />
                             )
                         })}
                     </ul>

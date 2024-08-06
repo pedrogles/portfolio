@@ -1,17 +1,9 @@
 import { AiOutlineArrowUp, AiOutlineDownload } from "react-icons/ai";
-import { Link } from "react-router-dom";
 
-import curriculo from "../../assets/documents/pedrogabriel-curriculo.pdf";
+import curriculo from "../../../assets/documents/pedrogabriel-curriculo.pdf";
 
-import "./buttons.scss";
+import "./fixedbuttons.scss";
 
-export function RouterButton({ name, to }) {
-    return (
-        <Link className="router-button" to={to}>
-            {name}
-        </Link>
-    )
-}
 export function FixedButtons() {
     const topFunction = () => {
         document.body.scrollTop = 0; // For Safari
