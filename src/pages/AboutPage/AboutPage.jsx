@@ -1,14 +1,9 @@
 import { Section, Line, Title, FixedButtons } from "../../components";
-import { data } from "../../utils/data";
+import { user, aboutme, experiences, educations, skills } from "../../mocks/data";
 
 import "./aboutpage.scss";
 
 export function AboutPage() {
-    const user = data.user;
-    const aboutme = data.user.aboutme;
-    const experiences = data.user.experiences;
-    const educations = data.user.educations;
-    const skills = data.user.skills;
     return (
             <main id="about-page" >
                 <Section>

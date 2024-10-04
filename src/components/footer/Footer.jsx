@@ -1,14 +1,13 @@
-import { data } from "../../utils/data";
+import { links } from "../../mocks/data";
 
 import "./footer.scss";
 
 export function Footer() {
-    const social = data.user.social;
     const year = new Date().getFullYear();
     return (
         <footer id="footer">
             <ul className="link-icons">
-                {social.map((link, key) => {
+                {links.map((link, key) => {
                     return (
                         <li key={key}>
                             <a className="link" href={link.href} target="_blank" rel="noopener noreferrer">

@@ -1,11 +1,10 @@
 import { Section, Title, FixedButtons } from "../../components";
 
-import { data } from "../../utils/data";
+import { projects } from "../../mocks/data";
 
 import "./projectspage.scss";
 
 export function ProjectsPage() {
-    const projects = data.user.projects;
     return (
         <main id="projects-page">
             <Section>
