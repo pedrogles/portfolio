@@ -1,7 +1,7 @@
 import "./line.scss";
 
-export default function Line() {
+export function Line() {
     return (
         <div className="line"></div>
-    )
-}
+    );
+};

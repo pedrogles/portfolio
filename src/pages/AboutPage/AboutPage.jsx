@@ -1,14 +1,9 @@
-import Section from "../../components/section/Section";
-import Line from "../../components/line/Line";
-
-import { Title } from "../../components/texts/title/Title";
-import { FixedButtons } from "../../components/buttons/Buttons";
-
+import { Section, Line, Title, FixedButtons } from "../../components";
 import { data } from "../../utils/data";
 
-import "./about.scss";
+import "./aboutpage.scss";
 
-export default function About() {
+export function AboutPage() {
     const user = data.user;
     const aboutme = data.user.aboutme;
     const experiences = data.user.experiences;

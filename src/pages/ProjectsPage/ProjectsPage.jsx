@@ -1,13 +1,10 @@
-import Section from "../../components/section/Section";
-
-import { Title } from "../../components/texts/title/Title";
-import { FixedButtons } from "../../components/buttons/Buttons";
+import { Section, Title, FixedButtons } from "../../components";
 
 import { data } from "../../utils/data";
 
-import "./projects.scss";
+import "./projectspage.scss";
 
-export default function Projects() {
+export function ProjectsPage() {
     const projects = data.user.projects;
     return (
         <main id="projects-page">
@@ -30,8 +27,7 @@ export default function Projects() {
                 })}
                 </ul>
             </Section>
-
             <FixedButtons />
         </main>
-    )
-}
+    );
+};

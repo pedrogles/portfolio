@@ -1,14 +1,13 @@
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
+import { Menu } from "./menu/Menu";
+
+import logo from "../../assets/logo/pg.svg";
 
 import "./navbar.scss";
 
-import Menu from "./menu/Menu";
-
-import logo from "../../assets/logo/pg.svg";
-import { Link } from "react-router-dom";
-
-export default function Navbar() {
+export function Navbar() {
     const handleOpenMenu = () => {
         const menu = document.querySelector('#menu');
         const navbar = document.querySelector('#navbar-mobile');
@@ -19,7 +18,7 @@ export default function Navbar() {
             openMenuIcon.style.display = "none";
             closeMenuIcon.style.display = "block";
         };
-    }
+    };
     const handleCloseMenu = () => {
         const menu = document.querySelector('#menu');
         const navbar = document.querySelector('#navbar-mobile');
@@ -30,7 +29,7 @@ export default function Navbar() {
             openMenuIcon.style.display = "block";
             closeMenuIcon.style.display = "none";
         };
-    }
+    };
     return (
         <>
             <header id="navbar-mobile">
@@ -62,5 +61,5 @@ export default function Navbar() {
                 </nav>
             </header>
         </>
-    )
-}
+    );
+};

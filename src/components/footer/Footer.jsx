@@ -2,7 +2,7 @@ import { data } from "../../utils/data";
 
 import "./footer.scss";
 
-export default function Footer() {
+export function Footer() {
     const social = data.user.social;
     const year = new Date().getFullYear();
     return (
@@ -23,5 +23,5 @@ export default function Footer() {
                 <p className="footer-paragraph-dev">Desenvolvimento e Design por Pedro Gabriel.</p>
             </div>
         </footer>
-    )
-}
+    );
+};

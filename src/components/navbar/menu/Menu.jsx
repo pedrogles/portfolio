@@ -4,7 +4,7 @@ import { FaRegSquare } from "react-icons/fa";
 
 import "./menu.scss";
 
-export default function Menu({ handleCloseMenu }) {
+export function Menu({ handleCloseMenu }) {
     return (
         <nav id="menu">
             <ul className="menu-list">
