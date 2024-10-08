@@ -1,2 +1,2 @@
-export * from './project/Project';
-export * from './projects/Projects';
+export { Project } from './project/Project';
+export { Projects } from './projects/Projects';

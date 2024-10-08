@@ -1,2 +1,2 @@
-export * from './largeScreen/LargeScreen';
-export * from './smallScreen/SmallScreen';
+export { LargeScreen } from './largeScreen/LargeScreen';
+export { SmallScreen } from './smallScreen/SmallScreen';
