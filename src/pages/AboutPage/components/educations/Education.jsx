@@ -1,4 +1,5 @@
-import { ListItem, Section, Title } from '../../../../components';
+import { Section, Title } from '../../../../components';
+import { ListItem } from '../';
 import { educations } from '../../../../mocks/data';
 
 import './educations.scss';
