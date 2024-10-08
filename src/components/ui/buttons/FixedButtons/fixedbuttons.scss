@@ -1,4 +1,4 @@
-@import "../../../styles/global.scss";
+@import "../../../../styles/global.scss";
 
 .fixed-buttons {
     position: fixed;
@@ -7,22 +7,21 @@
     display: flex;
     flex-direction: column-reverse;
     gap: .5rem;
-    transition: 1s;
     .button {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: transparent;
-        border: solid .1rem #979797;
+        background-color: #040404cc;
+        border: solid .1rem $white_color;
+        color: #040404cc;
         border-radius: .5rem;
         padding: .5rem;
-        color: $black_color;
         font-size: .8rem;
         font-weight: 400;
         gap: .5rem;
         .icon {
             font-size: 1.3rem;
-            color: #979797;
+            color: $white_color;
         };
     };
 };

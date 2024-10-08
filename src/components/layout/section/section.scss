@@ -2,37 +2,37 @@
     width: 100vw;
     max-width: calc(100vw - 72px);
     margin: 3rem 1.5rem;
-}
+};
 
 @media (min-width: 500px) and (max-width: 767px) {
     .section {
         width: 100vw;
         max-width: calc(100vw - 120px);
         margin: 3rem 1.5rem;
-    }
-}
+    };
+};
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .section {
         max-width: calc(100vw - 12rem);
         margin: 6rem 1.5rem;
-    }
-}
+    };
+};
 
 @media (min-width: 1024px) and (max-width: 1439px) {
     .section {
         max-width: calc(100vw - 14rem);
-    }
-}
+    };
+};
 
 @media (min-width: 1440px) and (max-width: 1900px) {
     .section {
         max-width: calc(100vw - 40vw);
-    }
-}
+    };
+};
 
 @media (min-width: 1900px) {
     .section {
         max-width: calc(100vw - 50vw);
-    }
-}
+    };
+};

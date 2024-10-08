@@ -15,7 +15,7 @@ export function SmallScreen() {
     return (
         <header id="header-sm">
             <div className="items-sm">
-                <Link className="home-link-sm" to="/" onClick={() => scrollToTop()}>
+                <Link to="/" onClick={() => scrollToTop()}>
                     <img 
                         className="logo" 
                         src={logo} 

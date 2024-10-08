@@ -8,7 +8,7 @@ import "./largescreen.scss";
 export function LargeScreen() {
     return (
         <header id="header-lg">
-            <Link className="home-link-lg" to="/" onClick={() => scrollToTop()}>
+            <Link to="/" onClick={() => scrollToTop()}>
                 <img 
                     className="logo" 
                     src={logo} 

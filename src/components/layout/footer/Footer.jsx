@@ -1,4 +1,4 @@
-import { links } from "../../mocks/data";
+import { links } from "../../../mocks/data";
 
 import "./footer.scss";
 
