@@ -11,5 +11,5 @@ export default function Routers() {
             <Route path="*" element={ <HomePage/> }/>
             {/* Criar página 404 */}
         </Routes>
-    )
-}
+    );
+};
