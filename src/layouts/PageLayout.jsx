@@ -1,4 +1,4 @@
-import { Navbar, Footer } from "../../components";
+import { Navbar, Footer } from "../components";
 
 export function PageLayout({ children }) {
     return (

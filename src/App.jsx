@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom"
 import Routers from './Routers';
-import { PageLayout } from "./layouts";
+import { PageLayout } from "./layouts/PageLayout";
 
 function App() {
   return (
