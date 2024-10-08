@@ -12,9 +12,10 @@
         justify-content: center;
         align-items: center;
         background-color: #040404cc;
-        border: solid .1rem $white_color;
-        color: #040404cc;
+        border: solid .1rem #040404cc;
         border-radius: .5rem;
+        cursor: pointer;
+        transition: 1s;
         padding: .5rem;
         font-size: .8rem;
         font-weight: 400;
@@ -22,6 +23,13 @@
         .icon {
             font-size: 1.3rem;
             color: $white_color;
+        };
+    };
+    .button:hover {
+        background-color: #d1d1d1;
+        border: solid .1rem #d1d1d1;
+        .icon {
+            color: $black_color;
         };
     };
 };
@@ -43,19 +51,9 @@
             padding: 1rem;
             font-size: .8rem;
             gap: .5rem;
-            cursor: pointer;
-            transition: 1s;
             .icon {
                 font-size: 2rem;
-                color: #979797;
             };
         };
-        .button:hover {
-            background-color: #d1d1d1;
-            border: solid .1rem #d1d1d1;
-            .icon {
-                color: $black_color;
-            };
-        };
-    } ;
+    };
 };
