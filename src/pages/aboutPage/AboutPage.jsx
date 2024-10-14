@@ -9,13 +9,13 @@ export function AboutPage() {
                 <AboutMe/>
 
                 <Line/>
-                <Skills/>
+                <Educations/>
                 
                 <Line/>
                 <Experiences/>
                 
                 <Line/>
-                <Educations/>
+                <Skills/>
                 
                 <FixedButtons/>
             </main>
