@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 
-import { HomePage, AboutPage, ProjectsPage } from "./pages";
+import { HomePage, AboutPage, ProjectsPage } from "../pages";
 
-export default function Routers() {
+export function AppRoutes() {
     return (
         <Routes>
             <Route path="/" element={ <HomePage /> }/>
