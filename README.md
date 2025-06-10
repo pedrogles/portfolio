@@ -3,7 +3,8 @@
 
 >  Web portfólio onde você encontrará uma breve descrição sobre mim e uma coleção selecionada dos meu trabalhos, mostrando minhas habilidades e experiências em desenvolvimento e design web.
 
-![screencapture-portfolio-pedrogles-vercel-app-2024-02-25-19_01_23](https://github.com/pedrogles/portfolio/assets/76228682/87225d31-d09f-456a-918e-1e95750fee11)
+![image](https://github.com/user-attachments/assets/e3708582-2c12-4189-8b1f-c779bce2c987)
+
 
 ## Tecnologias Utilizadas
 
