@@ -1,7 +1,9 @@
-export { Footer} from './layout/footer/Footer';
-export { Navbar } from './layout/navbar/Navbar';
-export { Section } from './layout/section/Section';
-export { FixedButtons } from './ui/buttons/FixedButtons/FixedButtons';
-export { RouterButton } from './ui/buttons/RouterButton/RouterButton';
-export { Line } from './ui/line/Line';
-export { Title } from './ui/texts/Title/Title';
+export { Footer} from './layout/Footer/Footer';
+export { Navbar } from './layout/Navbar/Navbar';
+export { PageLayout } from './layout/PageLayout/PageLayout';
+
+export { Divider } from './ui/Divider/Divider';
+export { FixedButtons } from './ui/FixedButtons/FixedButtons';
+export { Section } from './ui/Section/Section';
+export { Spinner } from './ui/Spinner/Spinner';
+export { Title } from './ui/Title/Title';
