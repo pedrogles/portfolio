@@ -1,15 +1,18 @@
 import { Routes, Route } from "react-router-dom";
-
-import { HomePage, AboutPage, ProjectsPage } from "../pages";
+import { Suspense } from "react";
+import { LoadingPage } from "../pages/LoadingPage/LoadingPage";
+import { Home, About, Projects } from './pages';
 
 export function AppRoutes() {
     return (
-        <Routes>
-            <Route path="/" element={ <HomePage /> }/>
-            <Route path="sobre" element={ <AboutPage />}/>
-            <Route path="projetos" element={ <ProjectsPage />} />
-            <Route path="*" element={ <HomePage/> }/>
-            {/* Criar página 404 */}
-        </Routes>
+        <Suspense fallback={<LoadingPage />}>
+            <Routes>
+                <Route path="/" element={ <Home /> }/>
+                <Route path="sobre" element={ <About />}/>
+                <Route path="projetos" element={ <Projects />} />
+                <Route path="*" element={ <Home/> }/>
+                {/* Criar página 404 */}
+            </Routes>
+        </Suspense>
     );
 };
