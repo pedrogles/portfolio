@@ -7,3 +7,4 @@ export { FixedButtons } from './ui/FixedButtons/FixedButtons';
 export { Section } from './ui/Section/Section';
 export { Spinner } from './ui/Spinner/Spinner';
 export { Title } from './ui/Title/Title';
+export { Skeleton } from './ui/Skeleton/Skeleton';
