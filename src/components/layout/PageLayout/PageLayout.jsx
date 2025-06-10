@@ -1,10 +1,10 @@
-import { Navbar, Footer } from "../components";
+import { Navbar, Footer } from "../..";
 
 export function PageLayout({ children }) {
     return (
         <>
             <Navbar />
-            {children}
+                { children }
             <Footer />
         </>
     )
