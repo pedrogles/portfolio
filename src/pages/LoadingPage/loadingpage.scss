@@ -1,0 +1,9 @@
+@use '../../styles/variables' as v;
+
+#loading-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: v.$bg-default;
+}
