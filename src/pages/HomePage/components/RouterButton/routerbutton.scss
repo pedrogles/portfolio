@@ -1,0 +1,35 @@
+@use "../../../../styles/variables" as v;
+
+.router-button {
+    font-size: v.$text-sm;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    border: solid .1rem v.$text-terciary;
+    border-radius: .2rem;
+    color: v.$text-terciary;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 1s ;
+    animation: welcomeButtons 1s;
+
+    @media (min-width: 381px) and (max-width: 767px) {
+        font-size: v.$text-base;
+        padding: .75rem 1.5rem;
+    };
+    
+    @media (min-width: 768px) {
+        font-size: v.$text-xl;
+        padding: 1rem 2rem;
+
+        &:hover {
+            background-color: v.$text-terciary;
+            border: solid .1rem v.$text-terciary;
+            color: v.$text-primary;
+        };
+    };
+};
+
+@keyframes welcomeButtons {
+    0% { transform: scale(.1) translatey(-200px); };
+    100% { transform: scale(1); };
+};
