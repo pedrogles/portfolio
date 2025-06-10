@@ -1,0 +1,19 @@
+@use "../../../styles/variables" as v;
+
+.title {
+    font-size: v.$text-base;
+    color: v.$text-primary;
+    font-weight: 700;
+    
+    @media (min-width: 381px) and (max-width: 767px) {
+        font-size: v.$text-xl;
+    }
+    
+    @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: v.$text-2xl;
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: v.$text-3xl;
+    }
+}
