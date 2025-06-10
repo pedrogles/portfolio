@@ -1,0 +1,53 @@
+@use "../../../styles/variables" as v;
+
+.fixed-buttons {
+    position: fixed;
+    bottom: 4rem;
+    right: 1.2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .8rem;
+
+    @media (min-width: 381px) and (max-width: 767px) {
+        bottom: 3.8rem;
+        right: 1rem;
+    };
+    
+    @media (min-width: 768px) {
+        bottom: 3.8rem;
+        right: 2rem;
+        gap: 1rem;
+    };
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: v.$text-secondary;
+        border: solid .1rem v.$text-secondary;
+        border-radius: .2rem;
+        cursor: pointer;
+        transition: 1s;
+        padding: .5rem;
+
+        @media (min-width: 768px) {
+            padding: 1rem;
+
+            &:hover {
+                background-color: v.$icon-secondary;
+                border: solid .1rem v.$icon-secondary;
+                .icon {
+                    color: v.$icon-primary;
+                };
+            }
+        };
+        .icon {
+            font-size: v.$text-xl;
+            color: v.$icon-secondary;
+            
+            @media (min-width: 768px) {
+                font-size: v.$text-3xl;
+            };
+        };
+    };
+};
