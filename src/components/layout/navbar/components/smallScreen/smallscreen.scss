@@ -14,12 +14,14 @@
         height: 100%;
         background-color: v.$bg-default;
         z-index: 0;
-        .logo {
-            width: v.$text-3xl;
-            height: v.$text-3xl;
+        .link-logo {
             margin-left: 1.2rem;
-            filter: invert(1);
-        };
+                .logo {
+                width: 2rem;
+                height: 2rem;
+                filter: invert(1);
+            };
+        }
         .open-menu-button {
             font-size: v.$text-3xl;
             margin-right: 1.2rem;

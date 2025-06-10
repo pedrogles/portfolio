@@ -7,20 +7,26 @@ import logo from "../../../../../assets/logo/pg.svg";
 
 import { SECTIONS } from "../../../../../constants/sections";
 import { useNavbar } from "../../../../../hooks/useNavbar";
-import { Divider } from "../../../../";
+import { Divider, Skeleton } from "../../../../";
+import { useState } from "react";
 
 import "./smallscreen.scss";
 
 export function SmallScreen() {
+    const [isLoading, setIsLoading] = useState(true);
     const { isOpen, handleClick, handleChangeState } = useNavbar();
     return (
         <header id="header-sm">
             <section className="header-content">
-                <Link to="/" onClick={() => scrollToTop()}>
+                <Link className="link-logo" to="/" onClick={() => scrollToTop()}>
+                    {isLoading && <Skeleton width="2rem" height="2rem" rounded={true} />}
                     <img 
                         className="logo" 
                         src={logo} 
                         alt="Logotipo de cor branca, onde reune as letras P e G combinadas, referência a Pedro Gabriel." 
+                        style={{ display: isLoading ? 'none' : 'block' }}
+                        onLoad={() => setIsLoading(false)} 
+                        onError={() => setIsLoading(false)}
                     />
                 </Link>
                 { !isOpen && <FiMenu className="open-menu-button" onClick={handleChangeState} /> }
