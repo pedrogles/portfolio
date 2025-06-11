@@ -18,8 +18,12 @@ export default function HomePage() {
                 Do conceito ao código: <em>Criando experiências que conectam.</em>
             </p>
             <div className="home-buttons">
-                <RouterButton name="Sobre mim" to="/sobre" onClick={() => scrollToTop()}/>
-                <RouterButton name="Projetos" to="/projetos" onClick={() => scrollToTop()}/>
+                <RouterButton to="/sobre" aria-label="Ir para a página Sobre mim" onClick={() => scrollToTop()}>
+                    Sobre mim
+                </RouterButton>
+                <RouterButton to="/projetos" aria-label="Ir para a página Projetos" onClick={() => scrollToTop()}>
+                    Projetos
+                </RouterButton>
             </div>
             <FixedButtons/>
         </main>
