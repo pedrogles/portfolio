@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 import "./routerbutton.scss";
 
-export function RouterButton({ name, to, onClick }) {
+export function RouterButton({ children, className = '', ...rest }) {
     return (
-        <Link className="router-button" to={to} onClick={onClick}>
-            {name}
+        <Link className={`router-button ${className}`} {...rest} >
+            {children}
         </Link>
     );
 };
