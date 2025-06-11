@@ -14,7 +14,7 @@ export function ProfileCard() {
     };
     return (
         <div id="profileCard">
-            {isLoading && <Skeleton customClass="card-image" rounded={true} />}
+            {isLoading && <Skeleton className="card-image" rounded />}
             <img 
                 className="card-image" 
                 src={data.image} 
