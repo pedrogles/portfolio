@@ -10,25 +10,25 @@ export function Footer() {
             id: 0, 
             icon: <SiLinkedin aria-hidden="true" focusable="false" title="Link para Linkedin" />, 
             href: "https://www.linkedin.com/in/pedrogles/", 
-            ariaLabel: 'Link para Linkedin do Pedro.'
+            ariaLabel: 'Link para Linkedin do Pedro (abre em nova guia)'
          }, 
         { 
             id: 1, 
             icon: <SiGithub aria-hidden="true" focusable="false" title="Link para Github" />, 
             href: "https://github.com/pedrogles", 
-            ariaLabel: 'Link para Github do Pedro.'
+            ariaLabel: 'Link para Github do Pedro (abre em nova guia)'
          },
         { 
             id: 2, 
             icon: <SiWhatsapp aria-hidden="true" focusable="false" title="Link para Whatsapp" />, 
             href: "https://api.whatsapp.com/send?phone=5583996082302", 
-            ariaLabel: 'Link para Whatsapp do Pedro.'
+            ariaLabel: 'Link para Whatsapp do Pedro (abre em nova guia)'
          },
         { 
             id: 3, 
             icon: <FiMail aria-hidden="true" focusable="false" title="Link para enviar email" />, 
             href: "mailto:pedrogabriellima@gmail.com", 
-            ariaLabel: 'Link para enviar email para Pedro.'
+            ariaLabel: 'Link para enviar email para Pedro (abre em nova guia)'
          }
     ];
     return (
