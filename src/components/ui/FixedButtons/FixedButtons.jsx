@@ -8,11 +8,26 @@ import "./fixedbuttons.scss";
 export function FixedButtons() {
     return (
         <div className='fixed-buttons'>
-            <button className='button' onClick={() => scrollToTop()}>
-                <AiOutlineArrowUp className='icon'/>
+            <button 
+                className='button' 
+                aria-label="Ir para o topo da página" 
+                title="Ir para o topo da página" 
+                onClick={() => scrollToTop()}>
+                    <AiOutlineArrowUp 
+                        className='icon'
+                        aria-hidden="true" 
+                        focusable="false"/>
             </button>
-            {/* <a className='button' href={curriculum} download>
-                <AiOutlineDownload className='icon'/>
+            {/* <a 
+                    className='button' 
+                    href={curriculum}
+                    aria-label="Download de portfolio em PDF" 
+                    title="Download de portfolio em PDF"  
+                    download>
+                        <AiOutlineDownload 
+                            className='icon'
+                            aria-hidden="true" 
+                            focusable="false"/>
             </a> */}
         </div>
     );
