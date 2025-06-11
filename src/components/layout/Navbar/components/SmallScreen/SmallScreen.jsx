@@ -19,7 +19,7 @@ export function SmallScreen() {
         <header id="header-sm">
             <section className="header-content">
                 <Link className="link-logo" to="/" onClick={() => scrollToTop()}>
-                    {isLoading && <Skeleton width="2rem" height="2rem" rounded={true} />}
+                    {isLoading && <Skeleton width="2rem" height="2rem" rounded />}
                     <img 
                         className="logo" 
                         src={logo} 
@@ -29,15 +29,15 @@ export function SmallScreen() {
                         onError={() => setIsLoading(false)}
                     />
                 </Link>
-                { !isOpen && <FiMenu className="open-menu-button" onClick={handleChangeState} /> }
-                { isOpen && <MdClose className="close-menu-button" onClick={handleChangeState}/> }
+                { !isOpen && <FiMenu className="open-menu-button" aria-label="Abrir menu de navegação" onClick={handleChangeState} /> }
+                { isOpen && <MdClose className="close-menu-button" aria-label="Fechar menu de navegação" onClick={handleChangeState}/> }
             </section>
             <nav className={`menu ${isOpen ? 'menu-open' : ''}`}>
                 <ul className="menu-list">
                     {SECTIONS.map((section) => {
                         return (
                             <li className="menu-item" key={section.id}>
-                                <Link className="menu-link" to={section.path} onClick={() => handleClick()}>
+                                <Link className="menu-link" to={section.path} aria-label={section.ariaLabel} onClick={() => handleClick()}>
                                     {section.name}
                                 </Link>
                                 <Divider/>

@@ -1,17 +1,20 @@
 export const SECTIONS = [
     {
-        id: 1,
+        id: 0,
         name: 'Início',
-        path: '/'
+        path: '/',
+        ariaLabel: 'Ir para página início'
+    },
+    {
+        id: 1,
+        name: 'Sobre mim',
+        path: '/sobre',
+        ariaLabel: 'Ir para página sobre mim'
     },
     {
         id: 2,
-        name: 'Sobre mim',
-        path: '/sobre'
-    },
-    {
-        id: 3,
         name: 'Projetos',
-        path: '/projetos'
+        path: '/projetos',
+        ariaLabel: 'Ir para página projetos'
     },
 ];
