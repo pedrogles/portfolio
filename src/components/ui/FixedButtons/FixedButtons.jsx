@@ -18,17 +18,17 @@ export function FixedButtons() {
                         aria-hidden="true" 
                         focusable="false"/>
             </button>
-            {/* <a 
-                    className='button' 
-                    href={curriculum}
-                    aria-label="Download de portfolio em PDF" 
-                    title="Download de portfolio em PDF"  
-                    download>
-                        <AiOutlineDownload 
-                            className='icon'
-                            aria-hidden="true" 
-                            focusable="false"/>
-            </a> */}
+            <a 
+                className='button' 
+                href={curriculum}
+                aria-label="Download de portfolio em PDF" 
+                title="Download de portfolio em PDF"  
+                download>
+                    <AiOutlineDownload 
+                        className='icon'
+                        aria-hidden="true" 
+                        focusable="false"/>
+            </a>
         </div>
     );
 };
