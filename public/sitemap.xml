@@ -1,20 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pedrogles.vercel.app/</loc>
-    <lastmod>2025-06-11T01:34:38+00:00</lastmod>
-    <priority>1.00</priority>
+    <lastmod>2026-08-04</lastmod>
+    <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://pedrogles.vercel.app/sobre</loc>
-    <lastmod>2025-06-11T01:34:38+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://pedrogles.vercel.app/projetos</loc>
-    <lastmod>2025-06-11T01:34:38+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pedrogles.vercel.app/curriculo</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pedrogles.vercel.app/projetos/consulta-validacao-cadastral</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pedrogles.vercel.app/projetos/pro-reforma</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pedrogles.vercel.app/projetos/converx</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pedrogles.vercel.app/projetos/bendita-beleza</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pedrogles.vercel.app/projetos/informativo-tre-pb</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pedrogles.vercel.app/projetos/portfolio-renato-cesar</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
