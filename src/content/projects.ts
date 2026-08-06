@@ -1,9 +1,15 @@
 import type { Project } from '../types/project'
 
+import reurbValidacaoImage from '../assets/projects/reurb-validacao.webp'
+import proReforma from '../assets/projects/pro-reforma.webp'
+import informativoTRE from '../assets/projects/informativo-tre.webp'
+
 export const projects: readonly Project[] = [
   {
     slug: 'consulta-validacao-cadastral',
     title: 'Aplicação de consulta e validação cadastral',
+    image: reurbValidacaoImage,
+    imageAlt: 'Tela da aplicação de consulta e validação cadastral REURB',
     summary:
       'Aplicação Angular integrada ao Supabase para consulta segura de imóveis e responsáveis familiares.',
     category: 'featured',
@@ -35,6 +41,8 @@ export const projects: readonly Project[] = [
   {
     slug: 'pro-reforma',
     title: 'Pró-Reforma',
+    image: proReforma,
+    imageAlt: 'Tela da aplicação Pró-Reforma para planejamento de reformas residenciais',
     summary:
       'Manutenção e evolução de aplicação Angular voltada ao planejamento de reformas residenciais.',
     category: 'featured',
@@ -117,6 +125,8 @@ export const projects: readonly Project[] = [
   {
     slug: 'informativo-tre-pb',
     title: 'Informativo TRE-PB',
+    image: informativoTRE,
+    imageAlt: 'Capa do Informativo TRE-PB, publicação digital do Tribunal Regional Eleitoral da Paraíba',
     summary:
       'Projeto editorial com foco em facilitar a leitura e o acesso à informação por meio de textos, imagens e links.',
     category: 'previous',
