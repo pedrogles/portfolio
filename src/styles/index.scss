@@ -763,6 +763,10 @@ button.button {
   gap: var(--space-4);
 }
 
+.case-hero h1 {
+  max-width: 27ch;
+}
+
 .page-hero p:not(.eyebrow),
 .case-hero__summary {
   max-width: 46rem;
