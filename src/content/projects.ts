@@ -1,8 +1,16 @@
 import type { Project } from '../types/project'
+import reurbValidacaoImage from '../assets/projects/reurb-validacao.webp'
+import proReformaImage from '../assets/projects/pro-reforma.webp'
+import informativoTreImage from '../assets/projects/informativo-tre.webp'
+import renatoCesarImage from '../assets/logo/rcc.svg'
+import converxImage from '../assets/logo/converx.svg'
+import benditaBelezaImage from '../assets/logo/rv.svg'
 
 export const projects: readonly Project[] = [
   {
     slug: 'consulta-validacao-cadastral',
+    image: reurbValidacaoImage,
+    imageAlt: 'Tela da aplicação de consulta e validação cadastral REURB',
     schemaType: 'WebApplication',
     title: 'Aplicação de consulta e validação cadastral',
     summary:
@@ -36,6 +44,8 @@ export const projects: readonly Project[] = [
   },
   {
     slug: 'pro-reforma',
+    image: proReformaImage,
+    imageAlt: 'Tela da aplicação Pró-Reforma para planejamento de reformas residenciais',
     schemaType: 'WebApplication',
     title: 'Pró-Reforma',
     summary:
@@ -68,6 +78,8 @@ export const projects: readonly Project[] = [
   },
   {
     slug: 'converx',
+    image: converxImage,
+    imageAlt: 'Logotipo do Converx, conversor de moedas',
     schemaType: 'WebApplication',
     title: 'Converx — Conversor de moedas',
     summary:
@@ -96,6 +108,8 @@ export const projects: readonly Project[] = [
   },
   {
     slug: 'bendita-beleza',
+    image: benditaBelezaImage,
+    imageAlt: 'Identidade visual Bendita Beleza, com as iniciais RV e o perfil de um rosto feminino',
     schemaType: 'WebSite',
     title: 'Bendita Beleza',
     summary:
@@ -121,6 +135,8 @@ export const projects: readonly Project[] = [
   },
   {
     slug: 'informativo-tre-pb',
+    image: informativoTreImage,
+    imageAlt: 'Capa do Informativo TRE-PB, publicação digital do Tribunal Regional Eleitoral da Paraíba',
     schemaType: 'CreativeWork',
     title: 'Informativo TRE-PB',
     summary:
@@ -142,6 +158,8 @@ export const projects: readonly Project[] = [
   },
   {
     slug: 'portfolio-renato-cesar',
+    image: renatoCesarImage,
+    imageAlt: 'Identidade visual do Portfólio Renato César, com as iniciais RCC em fundo verde escuro',
     schemaType: 'CreativeWork',
     title: 'Portfólio Renato César',
     summary:

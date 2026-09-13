@@ -127,6 +127,7 @@ describe('portfólio', () => {
     expect(within(main).getByText('Desenvolvedor de Software')).toBeInTheDocument()
     expect(within(main).getByText(/Currículo online atualizado.*PDF ATS 2026.*separadamente/)).toBeInTheDocument()
     expect(main).not.toHaveTextContent(/somente leitura/i)
+    expect(within(main).getByText(/mural de inspiração/i)).toBeInTheDocument()
   })
 
   it('aplica os metadados principais da rota', async () => {
@@ -199,6 +200,46 @@ describe('portfólio', () => {
     const result = seoForPath('/projetos/' + slug)
     expect(result.jsonLd).toEqual([schema])
     expect(result.config).toMatchObject({ path: '/projetos/' + slug, type: 'article' })
+  })
+
+
+  it.each([
+    'consulta-validacao-cadastral',
+    'pro-reforma',
+    'converx',
+    'bendita-beleza',
+    'informativo-tre-pb',
+    'portfolio-renato-cesar',
+  ])('preserva a mídia canônica no card de %s', async (slug) => {
+    const project = projects.find((item) => item.slug === slug)!
+    expect(project.image).toEqual(expect.any(String))
+    expect(project.imageAlt?.trim()).toBeTruthy()
+    renderApp('/projetos')
+    const heading = await screen.findByRole('heading', { name: project.title })
+    const card = heading.closest('article')!
+    const media = within(card).getByRole('img', { name: project.imageAlt })
+    expect(media.tagName).toBe('IMG')
+    expect(media).toHaveAttribute('src', project.image)
+    fireEvent.load(media)
+    expect(within(card).queryByText('Prévia visual em preparação')).not.toBeInTheDocument()
+    expect(within(card).queryByRole('status')).not.toBeInTheDocument()
+  })
+
+  it('preserva tecnologias relevantes nas cinco experiências', async () => {
+    renderApp('/sobre')
+    await screen.findByRole('heading', { level: 1 })
+    for (const [organization, technologies] of [
+      ['Projeto de Regularização Fundiária Urbana (REURB)', ['Angular', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Git', 'Vercel']],
+      ['iUUL / Pró-Reforma', ['Angular', 'TypeScript', 'RxJS', 'PrimeNG', 'Angular Material', 'SCSS']],
+      ['Go Beesiness', ['React', 'TypeScript', 'Figma', 'REST APIs']],
+      ['Tribunal Regional Eleitoral da Paraíba', ['Figma', 'CSS', 'HTML']],
+      ['UNIESP Centro Universitário', ['Hardware', 'Software', 'Suporte Técnico']],
+    ] as const) {
+      const entry = screen.getByText(organization, { selector: '.timeline__organization' }).closest('article')!
+      for (const technology of technologies) {
+        expect(within(within(entry).getByRole('list', { name: 'Tecnologias utilizadas' })).getByText(technology, { exact: true })).toBeInTheDocument()
+      }
+    }
   })
 
   it('escapa conteúdo dinâmico ao serializar o head', () => {

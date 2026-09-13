@@ -93,7 +93,7 @@ export const resumeContent = {
       qualifier: 'Aplicação Angular',
       period: '2024 - 2025',
       bullets: [
-        'Aplicação web para seleção de materiais, consulta de preços e planejamento de orçamento de reformas, com formulários, filtros e integrações com APIs.',
+        'Aplicação web para seleção de materiais, consulta de preços e planejamento de orçamento de reformas, com mural de inspiração, formulários, filtros e integrações com APIs.',
         'Stack: Angular, TypeScript, RxJS, PrimeNG, Angular Material e SCSS.',
       ],
     },

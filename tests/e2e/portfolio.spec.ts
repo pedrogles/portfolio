@@ -71,3 +71,37 @@ for (const [slug, type] of [
     expect(errors).toEqual([])
   })
 }
+
+// Imports de assets são validados pelo bundler; este fluxo verifica a carga real no navegador.
+test('preserva mídias dos cards, dos cases e tecnologias da trajetória', async ({ page }) => {
+  const errors: string[] = []
+  page.on('pageerror', (error) => errors.push(error.message))
+  page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()) })
+  for (const [route, count] of [['/', 4], ['/projetos', 6]] as const) {
+    await page.goto(route)
+    const cards = page.locator('.project-card')
+    await expect(cards).toHaveCount(count)
+    for (const card of await cards.all()) {
+      const media = card.locator('img')
+      await media.scrollIntoViewIfNeeded()
+      await expect(media).toBeVisible()
+      await expect(media).toHaveJSProperty('complete', true)
+      await expect.poll(() => media.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0)
+      await expect(media).toHaveAttribute('alt', /\S/)
+      await expect(card.locator('.image-fallback')).toHaveCount(0)
+    }
+  }
+  for (const slug of ['consulta-validacao-cadastral', 'pro-reforma', 'converx', 'bendita-beleza', 'informativo-tre-pb', 'portfolio-renato-cesar']) {
+    await page.goto('/projetos/' + slug)
+    const media = page.locator('.case-visual img')
+    await expect(media).toBeVisible()
+    await expect.poll(() => media.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0)
+  }
+  await page.goto('/sobre')
+  const reurb = page.locator('.timeline__item').filter({ hasText: 'Projeto de Regularização Fundiária Urbana (REURB)' })
+  for (const technology of ['Angular', 'TypeScript', 'Supabase', 'PostgreSQL']) {
+    await expect(reurb.getByText(technology, { exact: true })).toBeVisible()
+  }
+  await expect(page.locator('.timeline__item .technology-list')).toHaveCount(5)
+  expect(errors).toEqual([])
+})
