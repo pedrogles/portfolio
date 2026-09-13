@@ -26,7 +26,7 @@ export default function HomePage() {
       <section className="hero">
         <Container className="hero__content">
           <div className="hero__copy">
-            <p className="eyebrow eyebrow--light">Front-end · João Pessoa, Brasil</p>
+            <p className="eyebrow eyebrow--light">Desenvolvimento de Software · João Pessoa, Brasil</p>
             <h1>{profile.heroTitle}</h1>
             <p className="hero__description">{profile.heroSupportingText}</p>
             <div className="hero__actions">
@@ -54,7 +54,7 @@ export default function HomePage() {
               </div>
               <div>
                 <dt>Entrega</dt>
-                <dd>Do layout ao deploy</dd>
+                <dd>Construção e evolução de soluções</dd>
               </div>
             </dl>
           </aside>
@@ -72,7 +72,7 @@ export default function HomePage() {
         <SectionHeading
           description="Atuação prática para criar, corrigir e evoluir experiências web com clareza técnica."
           eyebrow="Como posso ajudar"
-          title="Serviços Front-end para produtos que precisam avançar"
+          title="Serviços para construir e evoluir soluções"
         />
         <div className="service-grid">
           {services.map((service) => (
@@ -117,8 +117,8 @@ export default function HomePage() {
         <div className="contact-cta__content">
           <div>
             <p className="eyebrow">Próximo passo</p>
-            <h2>Tem uma interface para criar ou uma aplicação para evoluir?</h2>
-            <p>Conte o contexto do projeto e o que precisa funcionar melhor.</p>
+            <h2>Vamos conversar sobre uma oportunidade ou projeto?</h2>
+            <p>Estou disponível para oportunidades profissionais e projetos freelance. Conte o contexto e as necessidades da sua equipe ou produto.</p>
           </div>
           <ExternalLink href={profile.emailHref} opensNewTab={false}>
             Entrar em contato

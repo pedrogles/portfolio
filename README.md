@@ -1,6 +1,6 @@
 # Portfólio de Pedro Gabriel
 
-Portfólio profissional construído com React, TypeScript e Vite. O projeto apresenta perfil, serviços, trajetória, currículo e estudos de caso em rotas próprias, com conteúdo tipado e centralizado.
+Portfólio de Pedro Gabriel, Desenvolvedor de Software com especialidade em Front-end e atuação em aplicações web, dados e integrações. Construído com React, TypeScript e Vite. O projeto apresenta perfil, serviços, trajetória, currículo e estudos de caso em rotas próprias, com conteúdo tipado e centralizado.
 
 ## Principais recursos
 
@@ -64,7 +64,7 @@ O conteúdo profissional deve ser alterado em `src/content`. Isso evita duplica�
 
 As imagens finais dos estudos de caso devem ser exportadas em WebP e colocadas em `src/assets/projects`, seguindo os nomes descritos no README dessa pasta. Enquanto os arquivos não existem, a interface exibe um fallback neutro e acessível.
 
-A foto otimizada está em `src/assets/image/pedro.webp`. O currículo ATS 2026 está em `src/assets/documents/curriculo-pedro-gabriel.pdf`, e a página `/curriculo` replica seu conteúdo em uma versão HTML responsiva e imprimível.
+A foto otimizada está em `src/assets/image/pedro.webp`. O currículo ATS 2026 está em `src/assets/documents/curriculo-pedro-gabriel.pdf`, e permanece preservado para download separado. A página `/curriculo` é o currículo online atualizado, responsivo e imprimível; não exige equivalência textual com o PDF.
 
 ## Variáveis de ambiente
 
@@ -74,7 +74,9 @@ Variáveis com prefixo `VITE_` são incorporadas ao bundle do navegador e nunca 
 
 ## SEO e pré-renderização
 
-`npm run build` gera HTML estático para todas as rotas públicas conhecidas. O sitemap é derivado da mesma lista de rotas em `src/content/seo.ts`, reduzindo divergências. Novos estudos de caso devem ser incluídos no conteúdo central e receber metadados próprios.
+`npm run build` gera HTML estático para todas as rotas públicas conhecidas. O sitemap é derivado da mesma lista de rotas em `src/content/seo.ts`, reduzindo divergências. Novos estudos de caso devem ser incluídos no conteúdo central e receber metadados próprios. O discriminador `Project.schemaType` representa aplicações (`WebApplication`), sites (`WebSite`) e trabalhos editoriais (`CreativeWork`), sem atribuição universal de autoria.
+
+O REURB é o principal case técnico, apresentado apenas em nível conceitual. Os serviços se organizam em Aplicações Web, Dados e Integrações e Arquitetura e Evolução. Arquitetura de soluções de IA é uma direção de desenvolvimento profissional, não uma competência consolidada ou serviço oferecido.
 
 ## Qualidade, acessibilidade e segurança
 

@@ -1,50 +1,55 @@
 import type { Project } from '../types/project'
-
 import reurbValidacaoImage from '../assets/projects/reurb-validacao.webp'
-import proReforma from '../assets/projects/pro-reforma.webp'
-import informativoTRE from '../assets/projects/informativo-tre.webp'
+import proReformaImage from '../assets/projects/pro-reforma.webp'
+import informativoTreImage from '../assets/projects/informativo-tre.webp'
+import renatoCesarImage from '../assets/logo/rcc.svg'
+import converxImage from '../assets/logo/converx.svg'
+import benditaBelezaImage from '../assets/logo/rv.svg'
 
 export const projects: readonly Project[] = [
   {
     slug: 'consulta-validacao-cadastral',
-    title: 'Aplicação de consulta e validação cadastral',
     image: reurbValidacaoImage,
     imageAlt: 'Tela da aplicação de consulta e validação cadastral REURB',
+    schemaType: 'WebApplication',
+    title: 'Aplicação de consulta e validação cadastral',
     summary:
-      'Aplicação Angular integrada ao Supabase para consulta segura de imóveis e responsáveis familiares.',
+      'Solução REURB de consulta, revisão e validação cadastral, com responsabilidade técnica pela aplicação web, dados e integrações.',
     category: 'featured',
     technologies: ['Angular', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Git', 'Vercel'],
     responsibilities: [
-      'Modelagem e manutenção de PostgreSQL',
-      'Views e funções RPC',
-      'Autenticação e controle de acesso',
-      'Filtros e pesquisa por CPF',
-      'Paginação server-side',
-      'Visualização segura de dados',
-      'Deploy na Vercel',
+      'Responsável técnico pela frente de TI, com autonomia nas decisões técnicas e arquiteturais necessárias à solução.',
+      'Construção e evolução da aplicação web, conectando interfaces e fluxos de consulta, revisão e validação.',
+      'Modelagem, manutenção e organização da camada de dados e de suas integrações com a aplicação.',
+      'Importação e processamento de dados, com atenção à qualidade e à consistência das informações.',
+      'Organização de autenticação, autorização e controle de acesso, considerando privacidade e diferentes perfis de uso.',
+      'Manutenção, evolução técnica e resolução de novas necessidades em diferentes contextos de projeto.',
     ],
     context:
-      'Solução web para apoiar consultas e validações cadastrais no contexto de Regularização Fundiária Urbana.',
+      'A Regularização Fundiária Urbana reúne áreas com necessidades distintas de consulta e validação cadastral. Nesse ambiente multidisciplinar, a solução web apoia a leitura, a revisão e a validação das informações, conectando o trabalho dos usuários à camada de dados.',
     problem:
-      'Organizar o acesso a dados relacionados a imóveis e responsáveis familiares sem expor informações pessoais ou estruturas internas.',
+      'Organizar dados, regras de acesso e processos de validação em uma solução composta por diferentes componentes. O desafio envolve preservar a privacidade, acomodar regras por perfil e manter a consistência das informações ao longo de sua importação, revisão e utilização em múltiplos contextos de projeto.',
     solution:
-      'Aplicação Angular com autenticação, controle de acesso, consultas paginadas e integração com views e funções do Supabase/PostgreSQL.',
+      'Uma arquitetura que separa a aplicação web em Angular, a camada de dados em Supabase/PostgreSQL, a autenticação e autorização e as integrações. Pipelines de importação e processamento alimentam os fluxos cadastrais. A organização das responsabilidades entre esses componentes orienta decisões de manutenção, segurança e evolução, permitindo adaptar a solução a diferentes contextos de projeto.',
     challenges: [
-      'Proteger dados pessoais e restringir o acesso por perfil.',
-      'Manter filtros e paginação eficientes no servidor.',
-      'Apresentar dados complexos com clareza e segurança.',
+      'Conciliar privacidade e controle de acesso com as necessidades de consulta, revisão e validação dos usuários.',
+      'Acomodar regras distintas por perfil e manter comportamentos consistentes entre interface, dados e serviços.',
+      'Considerar concorrência nas alterações e preservação de histórico nos processos de revisão e validação.',
+      'Integrar fontes de dados com atenção à qualidade e ao processamento das informações importadas.',
+      'Evoluir uma solução para múltiplos projetos, equilibrando necessidades específicas, manutenção e consistência arquitetural.',
     ],
     outcome:
-      'Uma base de consulta orientada à validação cadastral, com responsabilidades separadas entre interface, autenticação e camada de dados.',
+      'Solução funcional para consulta, revisão e validação cadastral, com responsabilidades técnicas separadas entre aplicação, dados, acesso e integrações. A estrutura dá suporte a diferentes contextos de projeto e à evolução controlada das necessidades técnicas.',
     links: [],
   },
   {
     slug: 'pro-reforma',
-    title: 'Pró-Reforma',
-    image: proReforma,
+    image: proReformaImage,
     imageAlt: 'Tela da aplicação Pró-Reforma para planejamento de reformas residenciais',
+    schemaType: 'WebApplication',
+    title: 'Pró-Reforma',
     summary:
-      'Manutenção e evolução de aplicação Angular voltada ao planejamento de reformas residenciais.',
+      'Aplicação web Angular para seleção de materiais, consulta de preços e planejamento de orçamento de reformas.',
     category: 'featured',
     technologies: ['Angular', 'TypeScript', 'RxJS', 'PrimeNG', 'Angular Material', 'SCSS'],
     responsibilities: [
@@ -57,11 +62,11 @@ export const projects: readonly Project[] = [
       'Melhorias de UX',
     ],
     context:
-      'Aplicação direcionada ao planejamento de reformas residenciais, com fluxos orientados a formulários e dados.',
+      'Aplicação web voltada à reforma residencial, com seleção de materiais, consulta de preços e fluxos de planejamento, orçamento e compra.',
     problem:
       'Evoluir uma aplicação Angular mantendo consistência entre telas, integrações, estados e regras de validação.',
     solution:
-      'Manutenção incremental com componentes reutilizáveis, formulários reativos, tabelas, filtros e melhorias de responsividade.',
+      'Manutenção incremental dos fluxos de seleção de materiais e planejamento de reforma, com componentes reutilizáveis, formulários reativos, tabelas, filtros e integração com APIs para consulta de preços.',
     challenges: [
       'Trabalhar sobre uma base existente sem interromper os fluxos necessários.',
       'Padronizar componentes e comportamentos de interface.',
@@ -73,9 +78,12 @@ export const projects: readonly Project[] = [
   },
   {
     slug: 'converx',
+    image: converxImage,
+    imageAlt: 'Logotipo do Converx, conversor de moedas',
+    schemaType: 'WebApplication',
     title: 'Converx — Conversor de moedas',
     summary:
-      'Projeto autoral de conversão de moedas com interface responsiva, consumo de API e publicação na Vercel.',
+      'Aplicação web autoral e funcional de conversão de moedas via API externa em tempo real, com interface responsiva.',
     category: 'featured',
     technologies: ['React', 'JavaScript', 'API REST', 'CSS', 'Vercel'],
     responsibilities: [
@@ -100,9 +108,12 @@ export const projects: readonly Project[] = [
   },
   {
     slug: 'bendita-beleza',
+    image: benditaBelezaImage,
+    imageAlt: 'Identidade visual Bendita Beleza, com as iniciais RV e o perfil de um rosto feminino',
+    schemaType: 'WebSite',
     title: 'Bendita Beleza',
     summary:
-      'Website responsivo para apresentação de serviços de beleza com foco em interface e experiência visual.',
+      'Site institucional responsivo para apresentação de serviços de beleza e direcionamento para contato pelo WhatsApp.',
     category: 'featured',
     technologies: ['React', 'JavaScript', 'CSS', 'Design responsivo', 'Vercel'],
     responsibilities: [
@@ -116,7 +127,7 @@ export const projects: readonly Project[] = [
     problem:
       'Organizar conteúdo visual e informações de serviço sem prejudicar a navegação em dispositivos móveis.',
     solution:
-      'Website com hierarquia visual, seções objetivas e adaptação responsiva do conteúdo.',
+      'Landing page institucional com hierarquia visual, seções de serviços, conteúdo responsivo e direcionamento para contato pelo WhatsApp.',
     challenges: ['Equilibrar identidade visual e legibilidade.', 'Manter os elementos confortáveis em telas pequenas.'],
     outcome:
       'Uma apresentação digital coesa, responsiva e alinhada ao caráter visual do serviço.',
@@ -124,9 +135,10 @@ export const projects: readonly Project[] = [
   },
   {
     slug: 'informativo-tre-pb',
-    title: 'Informativo TRE-PB',
-    image: informativoTRE,
+    image: informativoTreImage,
     imageAlt: 'Capa do Informativo TRE-PB, publicação digital do Tribunal Regional Eleitoral da Paraíba',
+    schemaType: 'CreativeWork',
+    title: 'Informativo TRE-PB',
     summary:
       'Projeto editorial com foco em facilitar a leitura e o acesso à informação por meio de textos, imagens e links.',
     category: 'previous',
@@ -146,6 +158,9 @@ export const projects: readonly Project[] = [
   },
   {
     slug: 'portfolio-renato-cesar',
+    image: renatoCesarImage,
+    imageAlt: 'Identidade visual do Portfólio Renato César, com as iniciais RCC em fundo verde escuro',
+    schemaType: 'CreativeWork',
     title: 'Portfólio Renato César',
     summary:
       'Projeto de portfólio criado para organizar e facilitar o compartilhamento de publicações.',

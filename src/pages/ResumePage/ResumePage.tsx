@@ -15,7 +15,7 @@ export default function ResumePage() {
       <Seo config={seoByRoute.resume} jsonLd={[personSchema]} />
 
       <Container className="resume-toolbar">
-        <p>Versão HTML baseada no currículo ATS 2026.</p>
+        <p>Currículo online atualizado. O PDF ATS 2026 permanece disponível separadamente.</p>
         <div className="inline-actions">
           <button className="button button--primary" onClick={() => window.print()} type="button">
             Imprimir ou salvar em PDF

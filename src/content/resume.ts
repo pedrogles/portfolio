@@ -1,19 +1,19 @@
 export const resumeContent = {
-  headline: 'Desenvolvedor Front-end | Angular | TypeScript | React | Supabase',
+  headline: 'Desenvolvedor de Software',
   location: 'João Pessoa, PB',
   phone: '+55 (83) 99608-2302',
   phoneHref: 'tel:+5583996082302',
   portfolioLabel: 'pedrogles.vercel.app',
   portfolioUrl: 'https://pedrogles.vercel.app',
   summary:
-    'Desenvolvedor Front-end com experiência em Angular, React e TypeScript, atuando na construção e evolução de aplicações web orientadas a dados. Experiência com componentes reutilizáveis, formulários reativos, tabelas, filtros, paginação server-side, integração com APIs REST, autenticação e Supabase/PostgreSQL. Atualmente atua em projeto de Regularização Fundiária Urbana (REURB), estruturando banco PostgreSQL/PostGIS e aplicação Angular para consulta e validação cadastral. Conhecimento aplicado em acessibilidade, desempenho, segurança front-end, Git e deploy na Vercel.',
+    'Desenvolvedor de Software com base consolidada em Front-end e experiência em Angular, React e TypeScript. Atua na construção e evolução de aplicações web, conectando interfaces, dados, APIs e serviços com Supabase e PostgreSQL. Responsável técnico pela frente de TI do REURB, com autonomia em decisões arquiteturais, integrações, segurança e manutenção da solução. Atualmente aprofunda seus estudos em arquitetura de soluções de IA como direção de desenvolvimento profissional.',
   competencyGroups: [
     {
       label: 'Front-end',
       items: ['Angular', 'React', 'TypeScript', 'JavaScript (ES6+)', 'RxJS', 'HTML5', 'CSS3', 'SCSS', 'Tailwind CSS', 'Angular Material', 'PrimeNG'],
     },
     {
-      label: 'Dados e serviços',
+      label: 'Dados e Integrações',
       items: ['Supabase', 'PostgreSQL', 'PostGIS', 'SQL', 'APIs REST', 'Firebase Auth', 'Node.js'],
     },
     {
@@ -27,16 +27,16 @@ export const resumeContent = {
   ],
   experiences: [
     {
-      title: 'Desenvolvedor Front-end e Banco de Dados / Tecnologia da Informação',
+      title: 'Desenvolvedor de Software / Tecnologia da Informação',
       organization: 'Projeto de Regularização Fundiária Urbana (REURB)',
       period: '2026 - Atual',
       location: 'João Pessoa, PB',
       bullets: [
-        'Desenvolvimento de aplicação Angular de consulta e validação cadastral, com autenticação, rotas protegidas, filtros avançados, paginação server-side e visualização estruturada de informações.',
-        'Modelagem e manutenção de banco PostgreSQL/PostGIS no Supabase, incluindo views, funções RPC, migrations e fluxos de importação de dados.',
-        'Implementação de pesquisa de imóveis por CPF do responsável familiar sem exposição do documento na listagem, com validação de acesso e consulta somente leitura.',
-        'Revisão de segurança da Data API, permissões, grants, autenticação e proteção de dados pessoais, além da preparação do deploy na Vercel.',
-        'Alinhamento técnico com equipes de geoprocessamento, jurídico, social e urbanismo para organizar regras, dados e fluxos de validação.',
+        'Responsável técnico pela frente de TI, com autonomia nas decisões arquiteturais e na resolução de novas necessidades técnicas.',
+        'Desenvolvimento e evolução da aplicação Angular para consulta, revisão e validação cadastral em um contexto multidisciplinar.',
+        'Modelagem e manutenção da camada de dados com PostgreSQL/PostGIS e Supabase, integrações e fluxos de importação e processamento de dados.',
+        'Organização de autenticação, autorização e proteção de dados, com atenção à consistência entre componentes e à evolução controlada da solução.',
+        'Alinhamento de necessidades de validação com diferentes áreas e suporte a múltiplos contextos de projeto.',
       ],
     },
     {
@@ -84,7 +84,7 @@ export const resumeContent = {
       qualifier: 'Angular + Supabase',
       period: '2026',
       bullets: [
-        'Aplicação somente leitura para validação de cadastros REURB, com busca por edificação e CPF, filtros, paginação, autenticação e detalhamento por seções.',
+        'Solução REURB de consulta, revisão e validação cadastral, integrando aplicação web, dados, autenticação e importação, com responsabilidades técnicas separadas e suporte a diferentes contextos de projeto.',
         'Stack: Angular, TypeScript, Tailwind CSS, Supabase, PostgreSQL/PostGIS, Git e Vercel.',
       ],
     },
@@ -93,7 +93,7 @@ export const resumeContent = {
       qualifier: 'Aplicação Angular',
       period: '2024 - 2025',
       bullets: [
-        'Plataforma para planejamento de reformas residenciais, com mural de inspiração, componentes reutilizáveis, formulários, filtros e integrações com APIs.',
+        'Aplicação web para seleção de materiais, consulta de preços e planejamento de orçamento de reformas, com mural de inspiração, formulários, filtros e integrações com APIs.',
         'Stack: Angular, TypeScript, RxJS, PrimeNG, Angular Material e SCSS.',
       ],
     },
@@ -115,7 +115,7 @@ export const resumeContent = {
       qualifier: 'Projeto autoral',
       period: 'Projeto publicado',
       bullets: [
-        'Aplicação responsiva para conversão de moedas com consumo de API REST e foco em experiência do usuário.',
+        'Aplicação web funcional e responsiva para conversão de moedas via API externa em tempo real.',
         'Stack: React, JavaScript, HTML, CSS e API REST.',
       ],
     },

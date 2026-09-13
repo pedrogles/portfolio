@@ -21,7 +21,7 @@ export function Footer() {
       <Container className="site-footer__content">
         <div>
           <p className="site-footer__title">Vamos construir algo útil?</p>
-          <p>Disponível para oportunidades Front-end e projetos freelance.</p>
+          <p>Disponível para oportunidades em desenvolvimento de software e projetos freelance.</p>
         </div>
         <nav aria-label="Contato e redes sociais">
           <ul className="social-links">

@@ -16,7 +16,7 @@ import type { Skill } from '../../types/content'
 
 const skillCategories: readonly Skill['category'][] = [
   'Front-end',
-  'Dados e APIs',
+  'Dados e Integrações',
   'Ferramentas e práticas',
 ]
 
@@ -28,7 +28,7 @@ export default function AboutPage() {
       <header className="page-hero">
         <Container>
           <p className="eyebrow eyebrow--light">Sobre</p>
-          <h1>Desenvolvimento Front-end com base técnica e visão de produto</h1>
+          <h1>Desenvolvimento de software com base técnica e visão de produto</h1>
           <p>
             Conheça minha trajetória, as tecnologias que uso e a forma como organizo cada entrega.
           </p>
@@ -38,7 +38,7 @@ export default function AboutPage() {
       <Section className="profile-section">
         <div className="profile-section__grid">
           <ImageWithFallback
-            alt="Pedro Gabriel, desenvolvedor Front-end."
+            alt="Pedro Gabriel, desenvolvedor de software."
             className="profile-photo"
             fallbackLabel="Foto de Pedro Gabriel indisponível"
             height={496}
@@ -53,7 +53,7 @@ export default function AboutPage() {
               <p key={paragraph}>{paragraph}</p>
             ))}
             <div className="inline-actions">
-              <LinkButton to="/curriculo">Ver currículo em HTML</LinkButton>
+              <LinkButton to="/curriculo">Ver currículo online atualizado</LinkButton>
               <a
                 className="text-link"
                 download="curriculo-pedro-gabriel.pdf"

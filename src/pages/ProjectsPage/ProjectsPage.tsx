@@ -25,7 +25,7 @@ export default function ProjectsPage() {
 
       <Section>
         <SectionHeading
-          description="Projetos que representam minha atuação atual em desenvolvimento Front-end."
+          description="Projetos que representam minha atuação em software, aplicações web, dados e integrações."
           eyebrow="Desenvolvimento"
           title="Projetos principais"
         />
