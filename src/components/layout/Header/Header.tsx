@@ -40,7 +40,7 @@ export function Header() {
           <img alt="" aria-hidden="true" height="39" src={logo} width="46" />
           <span>
             Pedro Gabriel
-            <small>Front-end developer</small>
+            <small>Desenvolvedor de Software</small>
           </span>
         </AppLink>
 

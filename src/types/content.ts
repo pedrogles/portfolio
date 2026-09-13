@@ -24,7 +24,7 @@ export interface Service {
 
 export interface Skill {
   readonly name: string
-  readonly category: 'Front-end' | 'Dados e APIs' | 'Ferramentas e práticas'
+  readonly category: 'Front-end' | 'Dados e Integrações' | 'Ferramentas e práticas'
 }
 
 export interface Education {

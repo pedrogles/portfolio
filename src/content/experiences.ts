@@ -2,11 +2,11 @@ import type { Experience } from '../types/content'
 
 export const experiences: readonly Experience[] = [
   {
-    title: 'Desenvolvedor Front-end e Banco de Dados / Tecnologia da Informação',
+    title: 'Desenvolvedor de Software / Tecnologia da Informação',
     organization: 'Projeto de Regularização Fundiária Urbana (REURB)',
     period: '2026 - Atual',
     description:
-      'Desenvolvimento e manutenção de banco de dados PostgreSQL/PostGIS, integração com Supabase, estruturação de views e funções, controle de acesso e desenvolvimento de aplicação Angular para consulta e validação cadastral.',
+      'Responsável técnico pela frente de TI, com autonomia nas decisões arquiteturais e na evolução da solução. Atuação na aplicação Angular, banco PostgreSQL/PostGIS, Supabase, integrações, importação e processamento de dados, segurança e controle de acesso, além da manutenção e resolução de novas necessidades técnicas de consulta, revisão e validação cadastral.',
   },
   {
     title: 'Desenvolvedor Front-end - Residência em Software',
