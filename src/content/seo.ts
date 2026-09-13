@@ -29,28 +29,28 @@ export function absoluteUrl(path: string): string {
 
 export const seoByRoute = {
   home: {
-    title: 'Pedro Gabriel | Desenvolvedor Front-end Angular e React',
+    title: 'Pedro Gabriel | Desenvolvedor de Software',
     description:
-      'Portfólio de Pedro Gabriel, desenvolvedor Front-end especializado em Angular, React, TypeScript, interfaces responsivas, APIs e Supabase.',
+      'Portfólio de Pedro Gabriel: desenvolvimento de software e aplicações web com Angular, React e TypeScript, conectando dados, serviços e integrações.',
     path: '/',
   },
   about: {
-    title: 'Sobre Pedro Gabriel | Desenvolvedor Front-end',
+    title: 'Sobre Pedro Gabriel | Desenvolvedor de Software',
     description:
-      'Conheça a experiência, formação e competências de Pedro Gabriel em Angular, React, TypeScript, Supabase e desenvolvimento web.',
+      'Conheça a trajetória de Pedro Gabriel em desenvolvimento de software, com especialidade em Front-end, aplicações web, Supabase, PostgreSQL e integrações.',
     path: '/sobre',
     type: 'profile',
   },
   projects: {
-    title: 'Projetos Angular, React e Supabase | Pedro Gabriel',
+    title: 'Projetos de Software e Web | Pedro Gabriel',
     description:
-      'Projetos de desenvolvimento Front-end com Angular, React, TypeScript, Supabase, APIs, responsividade e UX.',
+      'Projetos de software e aplicações web com Angular, React, Supabase e PostgreSQL. Estudos de caso de interfaces, dados e integrações.',
     path: '/projetos',
   },
   resume: {
-    title: 'Currículo | Pedro Gabriel — Desenvolvedor Front-end',
+    title: 'Currículo | Pedro Gabriel — Desenvolvedor de Software',
     description:
-      'Currículo em HTML de Pedro Gabriel, desenvolvedor Front-end com experiência em Angular, React, TypeScript, APIs e Supabase.',
+      'Currículo online atualizado de Pedro Gabriel, Desenvolvedor de Software com experiência em Angular, React, TypeScript, dados e integrações com Supabase.',
     path: '/curriculo',
     type: 'profile',
   },
@@ -78,7 +78,7 @@ export const personSchema: JsonLdValue = {
   url: SITE_URL,
   jobTitle: profile.role,
   sameAs: ['https://github.com/pedrogles', 'https://www.linkedin.com/in/pedrogles/'],
-  knowsAbout: ['Angular', 'React', 'TypeScript', 'Supabase', 'PostgreSQL', 'Acessibilidade web'],
+  knowsAbout: ['Front-end', 'Angular', 'React', 'TypeScript', 'Supabase', 'PostgreSQL', 'Acessibilidade web'],
 }
 
 export const websiteSchema: JsonLdValue = {
@@ -108,15 +108,11 @@ export const projectsSchema: JsonLdValue = {
 export function projectSchema(project: Project): JsonLdValue {
   return {
     '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
+    '@type': project.schemaType,
     name: project.title,
     description: project.summary,
-    applicationCategory: 'WebApplication',
+    ...(project.schemaType === 'WebApplication' ? { applicationCategory: 'WebApplication' } : {}),
     url: absoluteUrl(`/projetos/${project.slug}`),
-    author: {
-      '@type': 'Person',
-      name: profile.fullName,
-    },
     keywords: project.technologies.join(', '),
   }
 }

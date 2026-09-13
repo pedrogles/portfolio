@@ -4,6 +4,7 @@ export interface ProjectLink {
 }
 
 export interface Project {
+  readonly schemaType: 'WebApplication' | 'WebSite' | 'CreativeWork'
   readonly slug: string
   readonly title: string
   readonly cardTitle?: string
